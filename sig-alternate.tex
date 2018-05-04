@@ -47,6 +47,12 @@
 
 \documentclass{sig-alternate}
 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{bbding}
+\usepackage{pifont}
+
 \begin{document}
 %
 % --- Author Metadata here ---
@@ -55,7 +61,7 @@
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{Title of our paper}
+\title{Comparative Analysis of Multi Paradigms Languages}
 
 %
 % You need the command \numberofauthors to handle the 'placement
@@ -99,57 +105,33 @@
 %
 % 1st. author
 \alignauthor
-Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{1932 Wallamaloo Lane}\\
-       \affaddr{Wallamaloo, New Zealand}\\
-       \email{trovato@corporation.com}
+Faisal Mumtaz\\
+       \affaddr{i16-1024}\\
+       \affaddr{MS(CS)}
 % 2nd. author
 \alignauthor
-G.K.M. Tobin\titlenote{The secretary disavows
-any knowledge of this author's actions.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{P.O. Box 1212}\\
-       \affaddr{Dublin, Ohio 43017-6221}\\
-       \email{webmaster@marysville-ohio.com}
+Faisal Mumtaz\\
+\affaddr{i16-1024}\\
+\affaddr{MS(CS)}
 % 3rd. author
-\alignauthor Lars Th{\o}rv{\"a}ld\titlenote{This author is the
-one who did all the really hard work.}\\
-       \affaddr{The Th{\o}rv{\"a}ld Group}\\
-       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
-       \affaddr{Hekla, Iceland}\\
-       \email{larst@affiliation.org}
+\alignauthor Umar Munir\\
+\affaddr{i16-1024}\\
+\affaddr{MS(CS)}
 \and  % use '\and' if you need 'another row' of author names
 % 4th. author
-\alignauthor Lawrence P. Leipuner\\
-       \affaddr{Brookhaven Laboratories}\\
-       \affaddr{Brookhaven National Lab}\\
-       \affaddr{P.O. Box 5000}\\
-       \email{lleipuner@researchlabs.org}
+% 4th. author
+\alignauthor Shahran Gohar \\
+\affaddr{i16-1024}\\
+\affaddr{MS(CS)}
 % 5th. author
-\alignauthor Sean Fogarty\\
-       \affaddr{NASA Ames Research Center}\\
-       \affaddr{Moffett Field}\\
-       \affaddr{California 94035}\\
-       \email{fogartys@amesres.org}
+\alignauthor Mehreen Alam\\
+\affaddr{i16-1024}\\
+\affaddr{MS(CS)}
 % 6th. author
-\alignauthor Charles Palmer\\
-       \affaddr{Palmer Research Laboratories}\\
-       \affaddr{8600 Datapoint Drive}\\
-       \affaddr{San Antonio, Texas 78229}\\
-       \email{cpalmer@prl.com}
+\alignauthor Shahid Hussain\\
+\affaddr{i16-1024}\\
+\affaddr{MS(CS)}
 }
-% There's nothing stopping you putting the seventh, eighth, etc.
-% author on the opening page (as the 'third row') but we ask,
-% for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
-\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
-email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
-(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
-\date{30 July 1999}
-% Just remember to make sure that the TOTAL number of authors
-% is the number that will appear on the first page PLUS the
-% number that will appear in the \additionalauthors section.
 
 \maketitle
 \begin{abstract}
@@ -171,8 +153,107 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 
 \section{Features}
 
-\subsection{Bound Checking  Faisal}
-\subsection{Type Safety Faisal}
+\subsection{Bound Checking}
+In computer programming, bound checking is any method of whether variable detecting variable is within bound before it is used.  A failed bounds check usually results in the generation of some sort of exception signal.
+\subsubsection{Range checking}
+It is usually used to check that whether a number fits into a given type. A range check is a check to make sure a number is within a certain range; for example, range check will ensure that a value that will assign to a 16-bit integer is within the capacity of a 16-bit integer. Some range checks may be more restrictive; for example, a variable to hold the number of a calendar month may be declared to accept only the range 1 to 12
+
+\subsubsection{Index checking}
+In index checking a variable being used as an array index is within the bounds of the array. Index checking means all expressions indexing an array, the index value is checked against the bounds of the array, which were created when the array was defined, and if the index is out-of-bounds, an error occur and further execution is suspended. If a number outside of the upper range is used in an array, it may cause the program to crash, or may introduce security vulnerabilities, index checking is a part of many high-level languages.
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{|l|c|l|}
+		\hline
+		& Index checking                                              & Range checking                                                   \\ \hline
+		Scala  &               \ding{52}                                              & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   (statically check)\end{tabular} \\ \hline
+		Swift  & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		F\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		Rust   & \begin{tabular}[c]{@{}c@{}}\ding{52}\\   (at run time)\end{tabular} & -                                                                \\ \hline
+		Vb.net & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		C\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		D      & \ding{54}                                                           & \ding{52}                                                                \\ \hline
+		Oz     & -                                                           & -                                                                \\ \hline
+		Matlab & \ding{52}                                                           & \begin{tabular}[c]{@{}l@{}}\ding{52}(statically\\   check)\end{tabular}  \\ \hline
+		Python & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Examples}
+\subsubsection{Scala}
+Array representation in scala \\
+scala> val a1 = Array(1, 2, 3) \\
+a1: Array[Int] = Array(1, 2, 3)
+\subsubsection{Swift-range checking }
+func contains(Bound)
+Returns a Boolean value indicating whether the given element is contained within the range.
+
+
+\subsection{Type Safety}
+The compiler will validate types and through an error if you assign a wrong type to a variable. 
+Type safety is checking for matched data types during compile time. For example, int a ="John" returns error as variable 'a' is an integer and we are assigning a string value. These data type mismatches are checked during compile time. Type safe code can access only the memory locations that it has permission to execute. Type safe code can never access any private members of an object. Type safe code ensures that objects are isolated from each other and are therefore safe for inadvertent or malicious corruption
+\subsubsection{The advantages type safety }
+At compile time, we get an error when a type instance is being assigned to an incompatible type; hence preventing an error at runtime. So at compilation time itself, developers come to know such errors and code will be modified to correct the mistake. So developers get more confidence in their code.
+Run time type safety ensures, we don't get strange memory exceptions and inconsistent behavior in the application.
+
+\subsubsection{scala}
+Scala is strongly type and smart about static type. Scala has powerful type inference. It will figure out itself mostly no need to tell it the types of your variables. 
+\subsubsection{Swift}
+Swift is type safe, it performs type checks when compiling code and flags any mismatched types as errors. This help in early catch and fix error in the development process. 
+It provides type inference which basically means that coders don’t require to spend more time in defining what types of variables they are using.
+\subsubsection{F\#}
+In f\#, static type checking can use almost as an instant unit test – making sure that your code is correct at compile time.
+F\# is more type-safe than C\#, and how the F\# compiler can catch errors that would only be detected at runtime in C\#.
+\subsubsection{Rust }
+Rust is a type-safe language. Rust has an escape valve from the safety rules. When you absolutely have to use a raw pointer. This is called unsafe code, and while most Rust programs dont need it, 
+how to use it and how it fits into Rust\'s overall safety scheme in
+ \\ https://www.safaribooksonline.com/library/view/programming-rust/9781491927274/ch21.html\#unsafe-code
+
+\subsubsection{VB.net}
+Type safety in .NET has been introduced to prevent the objects of one type from peeking into the memory assigned for the other object.
+\subsubsection{C\#}
+Type safety prevents assigning a type to another type when are not compatible.
+public class Employee{}
+
+public class Student{}
+In the above example, Employee and Student are two incompatible types. We cannot assign an object of employee class to Student class variable. If you try doing so, you will get an error during the compilation process. Type safety check happens at compile time it's called static type checking
+Example
+Cannot implicitly convert type 'Program.Employee' to 'Program.Student'.
+. When tried to type cast object of wrong type. We get 
+Unable to cast object of type ‘first object’ to ‘second object’
+type checking happens at runtime, hence it is called runtime type checking
+\subsubsection{D}
+D has compile-time type safety. 
+\subsubsection{OZ }
+OZ also known as MOZART. Oz variables are single-assignment variables or more appropriately logic variables. A single assignment variable has a number of phases in its lifetime. Initially it is introduced with unknown value, and later it might be assigned a value, in which case the variable becomes bound. Once a variable is bound, it cannot itself be changed.
+\subsubsection{Matlab}
+MATLAB is a loosely or weakly-typed language. Difference between MATLAB and a strongly-typed language is that you don't have to explicitly declare the types of the variables you use. For example, the declarations x=5; x='foo' immediately following one another are perfectly acceptable; the first declaration causes x to be treated as a number, the second changes its treatment to a string
+\subsubsection{Python}
+Python or Ruby are often referred to as dynamically typed languages, which throw exceptions to signal type errors occurring during execution
+\\
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{|l|c|}
+		\hline
+		Languages & Type Safety                                                                                                                           \\ \hline
+		Scala     & \begin{tabular}[c]{@{}c@{}}Strongly type, \\ Static type, \\ powerful type Inference\end{tabular}                                     \\ \hline
+		Swift     & \begin{tabular}[c]{@{}c@{}}Type check at compile time, \\ Support type inference\end{tabular}                                         \\ \hline
+		F\#       & \begin{tabular}[c]{@{}c@{}}Static Type Checking,\\ Compile Time\end{tabular}                                                          \\ \hline
+		Rust      & \begin{tabular}[c]{@{}c@{}}Type Safe, \\ escape valve, \\ unsafe to use raw pointers\end{tabular}                                     \\ \hline
+		VB.net    & Type safety use for memory security                                                                                                   \\ \hline
+		C\#       & \begin{tabular}[c]{@{}c@{}}Static type checking,\\  type checking compile time\end{tabular}                                           \\ \hline
+		D         & \begin{tabular}[c]{@{}c@{}}Type safe, \\ compile time\end{tabular}                                                                    \\ \hline
+		Oz        & \begin{tabular}[c]{@{}c@{}}Single Assignment variables, \\ Once value is assigned to\\   variable it can never be change\end{tabular} \\ \hline
+		Matlab    & \begin{tabular}[c]{@{}c@{}}Weakly type language, \\ no need to assign type explicitly,\end{tabular}                                   \\ \hline
+		Python    & Dynamically type language,                                                                                                            \\ \hline
+	\end{tabular}
+\end{table}
 
 \subsection{Exception Handling Umar}
 
