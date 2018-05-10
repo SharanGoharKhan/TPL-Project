@@ -52,6 +52,7 @@
 \usepackage{hyperref}
 \usepackage{bbding}
 \usepackage{pifont}
+\usepackage{rotating}
 
 \begin{document}
 %
@@ -129,7 +130,7 @@ Faisal Mumtaz\\
 \affaddr{MS(CS)}
 % 6th. author
 \alignauthor Shahid Hussain\\
-\affaddr{i16-1024}\\
+\affaddr{i17-1053}\\
 \affaddr{MS(CS)}
 }
 
@@ -419,8 +420,72 @@ Python & var a = 1                                  \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection{imperative control Shahid}
-\subsection{Explicit concurrency Shahid}
+\subsection{imperative control}
+
+Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if…else, switch statements and iteration statements like for, while, do etc.
+\newline
+In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we’ll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
+
+
+\subsection{Explicit concurrency}
+
+We say two activities are concurrent of they are executing in parallel or if they can be interleaved. The one which encapsulates a single concurrent activity, joining with a compulsory mutable state, is known as concurrency unit. Whether stream concurrency enables two or more concurrent activities to use each one end of stream. This could be thought as producer-consumer communication. In shared state, a shared data structure is modified by concurrent activities. Serialization or code locking ensures code segment to be executed only when permitted. In message passing concurrency, messages are exchanged among the concurrent activities. Message passing could be in synchronous (wait until receiving message) mode or asynchronous (not wait) mode or combination of the two modes. Message could be defined as data which is transferred among the activities. Order of message sending may not be important from the point of underlying platform.
+\newline
+All the above multi-paradigm programming languages have disjunctions in many features that are important in context of programming. Very popular language for message passing concurrency is F# as it provides facility of MailBoxProcessor. Some that have good option to access feature of shared pool, are python and D. Although all the multi-paradigm languages provide facility of code locks, still python is best and also C# and VB.Net as well. Matlab and R don’t facilitate concurrency. These languages even don’t provide any mechanism for message passing concurrency and don’t include feature of stream concurrency. Table 9 describes comparison of imperative control structures among multi-paradigm programming languages. 
+
+
+\afterpage{\clearpage}
+
+
+\begin{table*}[H]
+\centering
+\caption{Imperative control of multi-paradigm programming laguaguages}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline                   \\ \hline
+Methods/Procedures & Method/Procedure Invocation & Method/Procedure Parameters & Method/Procedure Return               & Imperative conditional expressions                 & Iteration                                            &                               \\ \hline
+Scala              & Function                    & By name or function pointer & Positional, by val                    & No                                                 & If (x\textgreater{}y) \{max= x;\}else \{max=y;\}     & While, do-while, for          \\ \hline
+Swift              & Function                    & By name or function pointer & Positional, by val                    & Explicit, return, with termination                 & If x\textgreater{}y \{max= x;\}else \{max=y;\}       & For-in, while                 \\ \hline
+Falcon             & Function                    & By name or function pointer & Positional, by val                    & Explicit, with termination                         & If x\textgreater{}y \{max= x;\}else \{max=y;\}       & For, while                    \\ \hline
+F\#                & Function                    & By name                     & Positional, by val, by ref            & Explicit, return                                   & If (x\textgreater{}y) then num1 else num2            & While…do, for…in/to/downto    \\ \hline
+Rust               & Function                    & By name or function pointer & Positional, by value                  & No                                                 & If x\textgreater{}y \{max=x;\} else \{max=y;\}       & Loop, while, for-in           \\ \hline
+Vb .Net            & Sub                         & By name or function pointer & Positional, by value, by ref, by name & Explicit return                                    & If x\textgreater{}y then x else y endif              & While…end, do-loop, for…next, \\ \hline
+C\#                & Method                      & By name or function pointer & Positional, by value, by ref, by name & Explicit, return, with termination, by val, by ref & If (x\textgreater{}y) \{ max=x; \} else \{ max=y; \} & While, do-while, for, foreach \\ \hline
+D                  & Function                    & By name or function pointer & Positional, by value                  & Explicit, with termination, return                 & If (x\textgreater{}y) \{max=x;\} else \{max=y;\}     & While, do-while, for          \\ \hline
+Oz                 & Function                    & By name or function pointer & Positional, by val                    & No                                                 & if x\textgreater{}y then x else y end                & For – do…end                  \\ \hline
+Matlab             & Function                    & By name or function pointer & Positional, by value                  & No                                                 & If (x\textgreater{}y) x else y end                   & While, for                    \\ \hline
+R                  & Function                    & By name or function pointer & Positional, by value                  & Last exp in func body                              & If (x\textgreater{}y) \{max= x\}else \{max=y\}       & Repeat, While, for            \\ \hline
+Python             & Function                    & By name or function pointer & Positional, by value                  & return                                             & If x\textgreater{}y: max=x else: max=y               & While, for                    \\ \hline
+\end{tabular}
+\end{table*}
+
+
+\begin{table*}[H]
+\centering
+\caption{Explicit concurrency description of multi-paradigm programming laguaguages}
+\hline
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|}       \\ \hline
+Explicit concurrency & Concurrency Unit & Stream Concurrency & Message passing            & Shared state     & Code locking &                 \\ \hline
+Scala                & Yes              & SynchVar           & AKKA                       & Yes              & Actor        & Java library    \\ \hline
+Swift                & Yes              & nsthread           & nsstream                   & No               & No           & Lock.swift      \\ \hline
+Falcon               &                  & Yes                & Yes                        & No               & Yes          & -sync y         \\ \hline
+F\#                  & Yes              & LockObject         & Threading                  & MailBoxProcessor & No           & LockedCounter   \\ \hline
+Rust                 & Yes              & Arc, mutex         & Thread                     & yes              & rc           &                 \\ \hline
+Vb .Net              & yes              & thread             & threading                  & Thread pool      & pool         & Synclock        \\ \hline
+C\#                  & yes              & Parallel.for       & Threading                  & Concurrency::    & monitor      & Lock()          \\ \hline
+D                    & yes              & tid                & Std.oncurrency Core.thread & Std.oncurrency   & Shared()     & core.sync.mutex \\ \hline
+Oz                   & yes              & thread             & no                         & No               & No           & Lck p           \\ \hline
+Matlab               & no               & No                 & No                         & no               & no           & Lock, mutex     \\ \hline
+R                    & no               & no                 & no                         & No               & no           & Lock            \\ \hline
+Python               & Yes              & No                 & Threading                  & Mpi              & Thread pool  & Lock, semaphore \\ \hline
+\end{tabular}
+\end{table*}
+
+
+
+
+
 
 \section{Discussion and Analysis}
 Compiled/interpreted: Major advantage of compilation is the fast performance as it directly used the native code of the target machine and hence has the opportunity to apply quite powerful optimizations during the compile stage. Since the translation is done only once during the compilation, program only needs to be loaded and executed. Major advantage of interpreted is that ease of implementing logic especially for dynamic languages. Also there is no need to compile code and the programs can be executed directly. It is also easier to debug since programs can be executed side by side. Keeping this in mind, compiled languages shall be suitable for the intensive parts of an application requiring heavy resource usage whereas less intensive parts could be written in interpreted languages, e.g. interfaces, invoking the application, ad hoc requests or prototyping.
