@@ -55,478 +55,632 @@
 \usepackage{rotating}
 
 \begin{document}
-%
-% --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
-%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
-%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
-% --- End of Author Metadata ---
-
-\title{Comparative Analysis of Multi Paradigms Languages}
-
-%
-% You need the command \numberofauthors to handle the 'placement
-% and alignment' of the authors beneath the title.
-%
-% For aesthetic reasons, we recommend 'three authors at a time'
-% i.e. three 'name/affiliation blocks' be placed beneath the title.
-%
-% NOTE: You are NOT restricted in how many 'rows' of
-% "name/affiliations" may appear. We just ask that you restrict
-% the number of 'columns' to three.
-%
-% Because of the available 'opening page real-estate'
-% we ask you to refrain from putting more than six authors
-% (two rows with three columns) beneath the article title.
-% More than six makes the first-page appear very cluttered indeed.
-%
-% Use the \alignauthor commands to handle the names
-% and affiliations for an 'aesthetic maximum' of six authors.
-% Add names, affiliations, addresses for
-% the seventh etc. author(s) as the argument for the
-% \additionalauthors command.
-% These 'additional authors' will be output/set for you
-% without further effort on your part as the last section in
-% the body of your article BEFORE References or any Appendices.
-
-\numberofauthors{8} %  in this sample file, there are a *total*
-% of EIGHT authors. SIX appear on the 'first-page' (for formatting
-% reasons) and the remaining two appear in the \additionalauthors section.
-%
-\author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
-% 1st. author
-\alignauthor
-Faisal Mumtaz\\
-       \affaddr{i16-1024}\\
-       \affaddr{MS(CS)}
-% 2nd. author
-\alignauthor
-Faisal Mumtaz\\
-\affaddr{i16-1024}\\
-\affaddr{MS(CS)}
-% 3rd. author
-\alignauthor Umar Munir\\
-\affaddr{i16-1011}\\
-\affaddr{MS(CS)}
-\and  % use '\and' if you need 'another row' of author names
-% 4th. author
-% 4th. author
-\alignauthor Sharan Gohar \\
-\affaddr{i16-1064}\\
-\affaddr{MS(CS)}
-% 5th. author
-\alignauthor Mehreen Alam\\
-\affaddr{i16-1024}\\
-\affaddr{MS(CS)}
-% 6th. author
-\alignauthor Shahid Hussain\\
-\affaddr{i17-1053}\\
-\affaddr{MS(CS)}
-}
-
-\maketitle
-\begin{abstract}
-Multiprogramming paradigms has gained immense popularity because of the wide spectrum of different paradigms covered. Not much work has been done to perform any comparative study and/or analysis of how various features are mapped onto different programming languages. This paper aims to highlights the concepts and usage of various features of different programming languages in multiprogramming languages. We have shortlisted our work to 12 languages Scala, Swift, Falcon, F#, Rust, VB.net, C#, Oz, Mozart, Matlab, R, and Python. On the other dimension, the features we have chosen to enhance our understanding of multiprogramming paradigm are Bound Checking, Type Safety, Exception Handling, Modularity, Compiled/Interpreted, Assertion, File Handling, Mutable, Immutable, Imperative Control and Explicit Concurrency. To the best of our knowledge, this is the first attempt to explore different features in depth and correlate them in their perspective of the above mentioned programming languages. The study revealed interesting patterns. While all languages support type safety, assertion, file-handling, exception handling, other show different behavior when it comes to bound checking, meta-programming, compiled/interpreted, immutability, imperative control and explicit concurrency.
-\end{abstract}
-
-
-\terms{Theory,Multi-programming,features,languages}
-
-\keywords{Theory,Multi-programming,features,languages}
-
-\section{Introduction}
-
-
-
-\section{Related Work}
-
-\section{Features}
-
-\subsection{Bound Checking}
-In computer programming, bound checking is any method of whether variable detecting variable is within bound before it is used.  A failed bounds check usually results in the generation of some sort of exception signal.
-\subsubsection{Range checking}
-It is usually used to check that whether a number fits into a given type. A range check is a check to make sure a number is within a certain range; for example, range check will ensure that a value that will assign to a 16-bit integer is within the capacity of a 16-bit integer. Some range checks may be more restrictive; for example, a variable to hold the number of a calendar month may be declared to accept only the range 1 to 12
-
-\subsubsection{Index checking}
-In index checking a variable being used as an array index is within the bounds of the array. Index checking means all expressions indexing an array, the index value is checked against the bounds of the array, which were created when the array was defined, and if the index is out-of-bounds, an error occur and further execution is suspended. If a number outside of the upper range is used in an array, it may cause the program to crash, or may introduce security vulnerabilities, index checking is a part of many high-level languages.
-\begin{table}[]
-	\centering
-	\caption{Index Checking}
+	%
+	% --- Author Metadata here ---
+	\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+	%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+	%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+	% --- End of Author Metadata ---
+	
+	\title{Comparative Analysis of Multi Paradigms Languages}
+	
+	%
+	% You need the command \numberofauthors to handle the 'placement
+	% and alignment' of the authors beneath the title.
+	%
+	% For aesthetic reasons, we recommend 'three authors at a time'
+	% i.e. three 'name/affiliation blocks' be placed beneath the title.
+	%
+	% NOTE: You are NOT restricted in how many 'rows' of
+	% "name/affiliations" may appear. We just ask that you restrict
+	% the number of 'columns' to three.
+	%
+	% Because of the available 'opening page real-estate'
+	% we ask you to refrain from putting more than six authors
+	% (two rows with three columns) beneath the article title.
+	% More than six makes the first-page appear very cluttered indeed.
+	%
+	% Use the \alignauthor commands to handle the names
+	% and affiliations for an 'aesthetic maximum' of six authors.
+	% Add names, affiliations, addresses for
+	% the seventh etc. author(s) as the argument for the
+	% \additionalauthors command.
+	% These 'additional authors' will be output/set for you
+	% without further effort on your part as the last section in
+	% the body of your article BEFORE References or any Appendices.
+	
+	\numberofauthors{8} %  in this sample file, there are a *total*
+	% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+	% reasons) and the remaining two appear in the \additionalauthors section.
+	%
+	\author{
+		% You can go ahead and credit any number of authors here,
+		% e.g. one 'row of three' or two rows (consisting of one row of three
+		% and a second row of one, two or three).
+		%
+		% The command \alignauthor (no curly braces needed) should
+		% precede each author name, affiliation/snail-mail address and
+		% e-mail address. Additionally, tag each line of
+		% affiliation/address with \affaddr, and tag the
+		% e-mail address with \email.
+		%
+		% 1st. author
+		\alignauthor
+		Shad Ahmed\\
+		\affaddr{i14-1028}\\
+		\affaddr{MS(CS)}
+		% 2nd. author
+		\alignauthor
+		Faisal Mumtaz\\
+		\affaddr{i16-1024}\\
+		\affaddr{MS(CS)}
+		% 3rd. author
+		\alignauthor Umar Munir\\
+		\affaddr{i16-1011}\\
+		\affaddr{MS(CS)}
+		\and  % use '\and' if you need 'another row' of author names
+		% 4th. author
+		% 4th. author
+		\alignauthor Sharan Gohar \\
+		\affaddr{i16-1064}\\
+		\affaddr{MS(CS)}
+		% 5th. author
+		\alignauthor Mehreen Alam\\
+		\affaddr{i16-1402}\\
+		\affaddr{Phd(CS)}
+		% 6th. author
+		\alignauthor Shahid Hussain\\
+		\affaddr{i17-1053}\\
+		\affaddr{MS(CS)}
+	}
+	
+	\maketitle
+	\begin{abstract}
+		Multiprogramming paradigms has gained immense popularity because of the wide spectrum of different paradigms covered. Not much work has been done to perform any comparative study and/or analysis of how various features are mapped onto different programming languages. This paper aims to highlights the concepts and usage of various features of different programming languages in multiprogramming languages. We have shortlisted our work to 12 languages Scala, Swift, Falcon, F\#, Rust, VB.net, C\#, Oz, Mozart, Matlab, R, and Python. On the other dimension, the features we have chosen to enhance our understanding of multiprogramming paradigm are Bound Checking, Type Safety, Exception Handling, Modularity, Compiled/Interpreted, Assertion, File Handling, Mutable, Immutable, Imperative Control and Explicit Concurrency. To the best of our knowledge, this is the first attempt to explore different features in depth and correlate them in their perspective of the above mentioned programming languages. The study revealed interesting patterns. While all languages support type safety, assertion, file-handling, exception handling, other show different behavior when it comes to bound checking, meta-programming, compiled/interpreted, immutability, imperative control and explicit concurrency.
+	\end{abstract}
+	
+	
+	\terms{Theory,Multi-programming,features,languages}
+	
+	\keywords{Theory,Multi-programming,features,languages}
+	
+	\section{Introduction}
+	Compiled/interpreted: The difference lies not in the language but how the language has been implemented. A compiler translates the source code of the program into another language format that can be directly executed by a lower-level machine. This can be an abstract machine (such as .NET or the Java Virtual Machine) or the actual machine. In the latter case, the language format that is the target of the compiler is machine code. The translation from source code into lower-level code depends on the abstract syntax and on the operational semantics of the programming language. An interpreter executes the source code directly; informally, it may help to think of the interpreter as executing the program line by line. A more correct understanding is that the interpreter walks through the abstract syntax tree generated by the parser and executes each node in this tree. If a node is a leaf, the leaf is executed. If a node is an internal node, each sub-tree is visited and executed. Exactly how this is to be done depends on the abstract syntax and on the underlying semantics of the programming language.
+	Out of the many programming languages in this world, some of them are called compiled languages while some are interpreted. For compilation, the software used is called compiler while interpreter is used for interpreted language. For a compiled language, an interpreter can be built but the reverse is impossible. That is, all the interpreted languages cannot be a compiled language. Additionally, being interpreted or compiled is not the property of the programming languages, but the design of some languages make them unsuitable for native code generation.
+	Assertion: specifies that a program satisfies certain conditions at particular points in its execution. An assertion violation indicates a bug in the program. Thus, assertions are an effective means of improving the reliability of programs and function as a systematic debugging tool. There are three types of assertion: pre-conditions, post-conditions and invariants. Preconditions specify conditions at the start of a function; post-conditions specify conditions at the end of a function while invariants specify conditions over a defined region of a program. Asserts are to be used primarily for checking parameter types, classes, or values, checking data structure invariants, checking "can't happen" situations (duplicates in a list, contradictory state variables) or after calling a function, to make sure that its return is reasonable. However, asserts are not to be used for handling run-time errors, like entering a negative number when positive is needed. But used to catching the program errors.
+	
+	Conditional compilation is a popular and important technique for implementing code with variable system. Conditional compilation can be used to include or exclude specific part of the code based on some condition. It can also be used for code to work in different environment like in web-programming, different platforms like mobile, tablet and PC etc. can be selected for different view. The code is written to assess whether the webpage is opened on mobile or PC to select desired view.
+	
+	File handling is a way to communicate with external files. File handling technique allows program to read data from and write data to an external file. Many programming languages and almost all the latest languages allow file handling. File handling is important because most of the times data is present somewhere else and it is required in the code. Similarly file handling allows result to be written on file so it may be carried out or used in another program.
+	
+	\section{Related Work}
+	Most Programming languages provide support for basic generic programming. generic programming aims to express algorithms and data structures in a way to be broadly adaptable [4]. Declarative programming languages provide more abstract level programming than imperative languages [5]. They are characterized by their formal nature.  Modern programming languages are not just object-oriented but include multiple paradigms. Common programming paradigms are imperative, declarative and symbolic [6]. Use of multiple programming paradigms help programmers in choosing suitable programming styles to get the job done [7].
+	Existing work demonstrated that separate paradigms for solving problems is insufficient[25]. Hence analyzing multi-paradigm languages should be under study in order to manage work from multiple perspective. 
+	
+	\section{Features}
+	
+	\subsection{Bound Checking}
+	In computer programming, bound checking is any method of whether variable detecting variable is within bound before it is used.  A failed bounds check usually results in the generation of some sort of exception signal.
+	\subsubsection{Range checking}
+	It is usually used to check that whether a number fits into a given type. A range check is a check to make sure a number is within a certain range; for example, range check will ensure that a value that will assign to a 16-bit integer is within the capacity of a 16-bit integer. Some range checks may be more restrictive; for example, a variable to hold the number of a calendar month may be declared to accept only the range 1 to 12
+	
+	\subsubsection{Index checking}
+	In index checking a variable being used as an array index is within the bounds of the array. Index checking means all expressions indexing an array, the index value is checked against the bounds of the array, which were created when the array was defined, and if the index is out-of-bounds, an error occur and further execution is suspended. If a number outside of the upper range is used in an array, it may cause the program to crash, or may introduce security vulnerabilities, index checking is a part of many high-level languages.
+	\begin{table}[]
+		\centering
+		\caption{Index Checking}
+		\label{my-label}
+		\begin{tabular}{|l|c|l|}
+			\hline
+			& Index checking                                              & Range checking                                                   \\ \hline
+			Scala  &               \ding{52}                                              & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   (statically check)\end{tabular} \\ \hline
+			Swift  & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+			F\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+			Rust   & \begin{tabular}[c]{@{}c@{}}\ding{52}\\   (at run time)\end{tabular} & -                                                                \\ \hline
+			Vb.net & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+			C\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+			D      & \ding{54}                                                           & \ding{52}                                                                \\ \hline
+			Oz     & -                                                           & -                                                                \\ \hline
+			Matlab & \ding{52}                                                           & \begin{tabular}[c]{@{}l@{}}\ding{52}(statically\\   check)\end{tabular}  \\ \hline
+			Python & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\subsubsection{Examples}
+	\subsubsection{Scala}
+	Array representation in scala \\
+	scala> val a1 = Array(1, 2, 3) \\
+	a1: Array[Int] = Array(1, 2, 3)
+	\subsubsection{Swift-range checking }
+	func contains(Bound)
+	Returns a Boolean value indicating whether the given element is contained within the range.
+	
+	
+	\subsection{Type Safety}
+	The compiler will validate types and through an error if you assign a wrong type to a variable. 
+	Type safety is checking for matched data types during compile time. For example, int a ="John" returns error as variable 'a' is an integer and we are assigning a string value. These data type mismatches are checked during compile time. Type safe code can access only the memory locations that it has permission to execute. Type safe code can never access any private members of an object. Type safe code ensures that objects are isolated from each other and are therefore safe for inadvertent or malicious corruption
+	\subsubsection{The advantages type safety }
+	At compile time, we get an error when a type instance is being assigned to an incompatible type; hence preventing an error at runtime. So at compilation time itself, developers come to know such errors and code will be modified to correct the mistake. So developers get more confidence in their code.
+	Run time type safety ensures, we don't get strange memory exceptions and inconsistent behavior in the application.
+	
+	\subsubsection{scala}
+	Scala is strongly type and smart about static type. Scala has powerful type inference. It will figure out itself mostly no need to tell it the types of your variables. 
+	\subsubsection{Swift}
+	Swift is type safe, it performs type checks when compiling code and flags any mismatched types as errors. This help in early catch and fix error in the development process. 
+	It provides type inference which basically means that coders dont require to spend more time in defining what types of variables they are using.
+	\subsubsection{F\#}
+	In f\#, static type checking can use almost as an instant unit test, making sure that your code is correct at compile time.
+	F\# is more type-safe than C\#, and how the F\# compiler can catch errors that would only be detected at runtime in C\#.
+	\subsubsection{Rust }
+	Rust is a type-safe language. Rust has an escape valve from the safety rules. When you absolutely have to use a raw pointer. This is called unsafe code, and while most Rust programs dont need it, 
+	how to use it and how it fits into Rust\'s overall safety scheme in
+	\\ https://www.safaribooksonline.com/library/view/programming-rust/9781491927274/ch21.html\#unsafe-code
+	
+	\subsubsection{VB.net}
+	Type safety in .NET has been introduced to prevent the objects of one type from peeking into the memory assigned for the other object.
+	\subsubsection{C\#}
+	Type safety prevents assigning a type to another type when are not compatible.\\ \\
+	public class Employee{}
+	public class Student{}\\
+	
+	In the above example, Employee and Student are two incompatible types. We cannot assign an object of employee class to Student class variable. If you try doing so, you will get an error during the compilation process. Type safety check happens at compile time it's called static type checking
+	Example
+	Cannot implicitly convert type 'Program.Employee' to 'Program.Student'. \\ When tried to type cast object of wrong type. We get \\
+	Unable to cast object of type 'first object' to 'second object'\\
+	type checking happens at runtime, hence it is called runtime type checking\\
+	\subsubsection{D}
+	D has compile-time type safety. 
+	\subsubsection{OZ }
+	OZ also known as MOZART. Oz variables are single-assignment variables or more appropriately logic variables. A single assignment variable has a number of phases in its lifetime. Initially it is introduced with unknown value, and later it might be assigned a value, in which case the variable becomes bound. Once a variable is bound, it cannot itself be changed.
+	\subsubsection{Matlab}
+	MATLAB is a loosely or weakly-typed language. Difference between MATLAB and a strongly-typed language is that you don't have to explicitly declare the types of the variables you use. For example, the declarations x=5; x='foo' immediately following one another are perfectly acceptable; the first declaration causes x to be treated as a number, the second changes its treatment to a string
+	\subsubsection{Python}
+	Python or Ruby are often referred to as dynamically typed languages, which throw exceptions to signal type errors occurring during execution
+	\\
+	\\
+	% Please add the following required packages to your document preamble:
+	% \usepackage[normalem]{ulem}
+	% \useunder{\uline}{\ul}{}
+	\begin{table}[]
+		\centering
+		\caption{Type Safety}
+		\label{my-label}
+		\begin{tabular}{|l|c|}
+			\hline
+			Languages & Type Safety                                                                                                                           \\ \hline
+			Scala     & \begin{tabular}[c]{@{}c@{}}Strongly type, \\ Static type, \\ powerful type Inference\end{tabular}                                     \\ \hline
+			Swift     & \begin{tabular}[c]{@{}c@{}}Type check at compile time, \\ Support type inference\end{tabular}                                         \\ \hline
+			F\#       & \begin{tabular}[c]{@{}c@{}}Static Type Checking,\\ Compile Time\end{tabular}                                                          \\ \hline
+			Rust      & \begin{tabular}[c]{@{}c@{}}Type Safe, \\ escape valve, \\ unsafe to use raw pointers\end{tabular}                                     \\ \hline
+			VB.net    & Type safety use for memory security                                                                                                   \\ \hline
+			C\#       & \begin{tabular}[c]{@{}c@{}}Static type checking,\\  type checking compile time\end{tabular}                                           \\ \hline
+			D         & \begin{tabular}[c]{@{}c@{}}Type safe, \\ compile time\end{tabular}                                                                    \\ \hline
+			Oz        & \begin{tabular}[c]{@{}c@{}}Single Assignment variables, \\ Once value is assigned to\\   variable it can never be change\end{tabular} \\ \hline
+			Matlab    & \begin{tabular}[c]{@{}c@{}}Weakly type language, \\ no need to assign type explicitly,\end{tabular}                                   \\ \hline
+			Python    & Dynamically type language,                                                                                                            \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{Exception Handling}
+	An exception handler is a block of code that is executed if an exception occurs during the execution of some other block of code. In this sense, exceptions are a kind of control statement. Raising an exception transfers the flow-of-control to exception handling code. User can also throw own created exception.
+	\begin{table}[]
+		\centering
+		\caption{Exception handling table}
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\begin{tabular}[c]{@{}l@{}}Lang\\ .\end{tabular}  & Throw                                                             & Handler                                                                                                                                                                                                              & Assertion                                                                                  \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Sca\\ la\end{tabular}  & throw                                                             & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\  catch (exception) \\ \{ instructions\}\\  finally\{instructions\}\end{tabular}                                                                                  & \begin{tabular}[c]{@{}l@{}}Assert(stat\\ ement)\end{tabular}                               \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Swi\\ ft\end{tabular}  & \begin{tabular}[c]{@{}l@{}}throw exce\\ ption ()\end{tabular}     & \begin{tabular}[c]{@{}l@{}}do\\ \{ try expression ...\\  instructions \}\\  catch exception\\ \{ instructions \}\end{tabular}                                                                                        & \begin{tabular}[c]{@{}l@{}}assert(condi\\ tion,descrip\\ tion)\end{tabular}                \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Falc\\ on\end{tabular} & \begin{tabular}[c]{@{}l@{}}raise excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}falcon.HTTPError\\ (status,title=None,\\ description=\\ None)\end{tabular}                                                                                                                &                                                                                            \\ \hline
+			F\#                                               & \begin{tabular}[c]{@{}l@{}}raise exce\\ ption\end{tabular}        & \begin{tabular}[c]{@{}l@{}}try expression\\ with pattern \\ or\\ try expression \\ finally expression\end{tabular}                                                                                                   & \begin{tabular}[c]{@{}l@{}}assert cond\\ ition\end{tabular}                                \\ \hline
+			Rust                                              & \begin{tabular}[c]{@{}l@{}}Err(excep\\ tion)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}match fun\_nam(x,y)\\  \{\\           Ok(v) =\textgreater \{\\  println!("\{\}", v); \},\\           Err(err) =\textgreater \{\\   println!("\{\}", err);\\  \}\}\end{tabular}            &                                                                                            \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Vb\\ .Net\end{tabular} & \begin{tabular}[c]{@{}l@{}}throw excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Try\\ instructions\\ Catch exception \\ When condition\\   instructions\\   ...\\   Finally\\   instructions\\   End Try\end{tabular}                                                     & \begin{tabular}[c]{@{}l@{}}Debug.Ass\\ ert(condi\\ tion)\end{tabular}                      \\ \hline
+			C\#                                               & \begin{tabular}[c]{@{}l@{}}throw excep\\ tion;\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   & \begin{tabular}[c]{@{}l@{}}Debug.Ass\\ ert(condi\\ tion);\end{tabular}                     \\ \hline
+			D                                                 & throw                                                             & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   &                                                                                            \\ \hline
+			Oz                                                & \begin{tabular}[c]{@{}l@{}}\{exception.\\ 'raise'X\}\end{tabular} & \begin{tabular}[c]{@{}l@{}}try S catch \\   Pattern\_1 then S1 \\   Pattern\_2 then S2 \\  finally \\    S\_final \\  end\end{tabular}                                                                               &                                                                                            \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Mat\\ lab\end{tabular} & \begin{tabular}[c]{@{}l@{}}throw(excep\\ tion)\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try\\ tab statements\\ catch exception\\ tab statements\\  end\end{tabular}                                                                                                               & \begin{tabular}[c]{@{}l@{}}assertError\\ (assert\\ able,actual,\\ identifier)\end{tabular} \\ \hline
+			R                                                 & throw()                                                           & \begin{tabular}[c]{@{}l@{}}tryCatch(\{\\       expr\},\\  war=function(w)\{\\  warning-handler-\\ code\},\\  error = function(e)\\  \{error-handler-\\ code\}, finally = \{\\       cleanup-code\\   \}\end{tabular} & \begin{tabular}[c]{@{}l@{}}assertError\\ (expr,verbo\\ se=FALSE)\end{tabular}              \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Pyth\\ on\end{tabular} & \begin{tabular}[c]{@{}l@{}}raise excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}try:\\   Tab instructions\\   except exception:\\   Tab instructions\\   else:\\   Tab instructions\\   finally:\\   Tab  instruction\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}assert cond\\ ition\end{tabular}                                \\ \hline
+		\end{tabular}
+		\caption{Exception Handling syntax in different languages  }
+		\label{my-label}
+	\end{table}
+	\subsection{Meta-programming}
+	Meta-programming is the capability to adapt itself (meta stack overflow which is the place to ask question about stack overflow itself). We can also say the ability to treat programs as their data. It means that a program can be designed to read, generate, analyze or transform other programs, and even modify itself while running. Meta-programming is not one specific technique, but rather an ensemble of concepts and techniques. There are two different ways of doing metaprogramming: on the Syntax level and at Runtime.\\
+	ection explain these components.
+	\begin{itemize}
+		\item \textbf{Features for Syntax:} These are feature of languages through which Syntax meta-programming apply.
+		\item \textbf{Features for Runtime:} These are feature of languages through which Runtime meta-programming apply.
+	\end{itemize}
+	\textbf{Reflection:} is the ability of a computer program to examine, introspect, and modify its own structure and behavior at runtime.
+	\begin{table}[]
+		\centering
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			\begin{tabular}[c]{@{}l@{}}Prog. \\ Lang.\end{tabular} & \multicolumn{2}{l|}{Ways of Doing}                                                                          & \begin{tabular}[c]{@{}l@{}}Features\\ for compile\\ time\end{tabular} & \begin{tabular}[c]{@{}l@{}}Features\\ for Run\\ Time\end{tabular} \\ 
+			
+			\hline
+			& \begin{tabular}[c]{@{}l@{}}Compile\\ Time\end{tabular} & \begin{tabular}[c]{@{}l@{}}Run\\ Time\end{tabular} &                                                                       &                                                                   \\ \hline
+			R                                                      &                                                        & \Checkmark                                                  &                                                                       & Objects                                                           \\ \hline
+			Scala                                                  & \Checkmark                                                      & \Checkmark                                                  & Reflection                                                            & Macros                                                            \\ \hline
+			Swift                                                  & \Checkmark                                                      &                                                    &                                                                       & Templates                                                         \\ \hline
+			Falcon                                                 & \Checkmark                                                      &                                                    &                                                                       & Macro                                                             \\ \hline
+			F\#                                                    & \Checkmark                                                      & \Checkmark                                                  &                                                                       & Quotation                                                         \\ \hline
+			Rust                                                   & \Checkmark                                                      &                                                    &                                                                       & Macros                                                            \\ \hline
+			VB.net                                                 & \Checkmark                                                      & \Checkmark                                                  & Reflection                                                            & Reflection                                                        \\ \hline
+			C\#                                                    &                                                        & \Checkmark                                                  &                                                                       & Objects                                                           \\ \hline
+			D                                                      & \Checkmark                                                      &                                                    &                                                                       & Template                                                          \\ \hline
+			Oz                                                     & x                                                      & x                                                  &                                                                       &                                                                   \\ \hline
+			Matlab                                                 & x                                                      & x                                                  &                                                                       &                                                                   \\ \hline
+			Python                                                 &                                                        & \Checkmark                                                  &                                                                       & \begin{tabular}[c]{@{}l@{}}meta-\\ classes\end{tabular}           \\ \hline
+		\end{tabular}
+		\label{my-label}
+	\end{table}
+	
+	\subsection{Compiled / interpreted}
+	Compiled/interpreted: The difference lies not in the language but how the language has been implemented. A compiler translates the source code of the program into another language format that can be directly executed by a lower-level machine. This can be an abstract machine (such as .NET or the Java Virtual Machine) or the actual machine. In the latter case, the language format that is the target of the compiler is machine code. The translation from source code into lower-level code depends on the abstract syntax and on the operational semantics of the programming language. An interpreter executes the source code directly; informally, it may help to think of the interpreter as executing the program line by line. A more correct understanding is that the interpreter walks through the abstract syntax tree generated by the parser and executes each node in this tree. If a node is a leaf, the leaf is executed. If a node is an internal node, each sub-tree is visited and executed. Exactly how this is to be done depends on the abstract syntax and on the underlying semantics of the programming language.
+	Out of the many programming languages in this world, some of them are called compiled languages while some are interpreted. For compilation, the software uses is called compiler while for interpreter is used for interpreted language. For a compiled language, an interpreter can be built but the reverse is impossible. That is, all the interpreted languages cannot be a compiled language. Additionally, being interpreted or compiled is not the property of the programming languages, but the design of some languages make them unsuitable for native code generation.
+	\begin{table*}[]
+		\centering
+		\caption{Compiled/interpreted]}
+		\label{my-label}
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{}        & \textbf{compiled}                                                                                                                                                                                                                                                                                                                                              & \textbf{interpreted}                                                                                                              \\ \hline
+			\textbf{Scala}   & \begin{tabular}[c]{@{}l@{}}actually a compiled , wherein\\   everything you type gets compiled \\  to the byte code and it runs within\\  the  JVM.\end{tabular}                                                                                                                                                                                               & illusion of interpreted                                                                                                           \\ \hline
+			\textbf{Swift}   & compiled                                                                                                                                                                                                                                                                                                                                                       &                                                                                                                                   \\ \hline
+			\textbf{Falcon}  & \begin{tabular}[c]{@{}l@{}}compiled, The Falcon compiler \\ contains a meta-compiler{[}23{]} that\\   supports macro expansions. A \\ Falcon Virtual Machine in the \\  standard compiler drives the \\  meta-compiler. Output generated\\  from the meta-compiler is sent to\\   the language lexer as if part of\\  the original source.\end{tabular}        &                                                                                                                                   \\ \hline
+			\textbf{F\#}     & \begin{tabular}[c]{@{}l@{}}compiled, open source cross platform \\ compiler from F\# Software  Foundation\end{tabular}                                                                                                                                                                                                                                         &                                                                                                                                   \\ \hline
+			\textbf{Rust}    & \begin{tabular}[c]{@{}l@{}}compiled.\\   First, the Rust compiler does all the\\  Rust specific stuff like type and \\ borrow checking; in the end, it \\ generates LLVM-IR. IR stands \\ for intermediate representation \\ and it's comparable to assembly,\\  but a tiny bit more high level and\\  most importantly: \\ platform independent.\end{tabular} &                                                                                                                                   \\ \hline
+			\textbf{Vb .Net} & \begin{tabular}[c]{@{}l@{}}version 6 and above, \\ both compiled and interpreted\end{tabular}                                                                                                                                                                                                                                                                  & interpreted                                                                                                                       \\ \hline
+			\textbf{C\#}     & compiled                                                                                                                                                                                                                                                                                                                                                       &                                                                                                                                   \\ \hline
+			\textbf{D}       & compiled                                                                                                                                                                                                                                                                                                                                                       &                                                                                                                                   \\ \hline
+			\textbf{Oz}      & \begin{tabular}[c]{@{}l@{}}ding{52}, Oz code can be\\   compiled into command line\\  executables. The compiled \\ code is not native binary, \\ but a shell script-wrapper\\  with embedded Oz virtual\\  machine bytecode.\end{tabular}                                                                                                                           & ding{52}                                                                                                                               \\ \hline
+			\textbf{Matlab}  &                                                                                                                                                                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}ding{52},  you can\\   write code and just \\ execute it from the IDE,\\  without compilation.\end{tabular} \\ \hline
+			\textbf{R}       & \begin{tabular}[c]{@{}l@{}}an interface to compiled code,\\   because all key routines are run \\  in compiled code (through .C, \\ .Call., .Internal, .Primitive interfaces,\\  etc.) But does not compile\end{tabular}                                                                                                                                       & \ding{52}                                                                                                                               \\ \hline
+			\textbf{Python}  &                                                                                                                                                                                                                                                                                                                                                                & \ding{52}                                                                                                                               \\ \hline
+		\end{tabular}
+\end{table*}
+	
+	
+	\subsection{Assertion}
+	Assertion: specifies that a program satisfies certain conditions at particular points in its execution. An assertion violation indicates a bug in the program. Thus, assertions are an effective means of improving the reliability of programs and function as a systematic debugging tool. There are three types of assertion: pre-conditions, post-conditions and invariants. Preconditions specify conditions at the start of a function; post-conditions specify conditions at the end of a function while invariants specify conditions over a defined region of a program. Asserts are to be used primarily for checking parameter types, classes, or values, checking data structure invariants, checking "can't happen" situations (duplicates in a list, contradictory state variables) or after calling a function, to make sure that its return is reasonable. However, asserts are not to be used for handling run-time errors, like entering a negative number when positive is needed. But used to catching the program errors.
+	\begin{table*}[]
+		\centering
+	\caption{Assertion - 1}
 	\label{my-label}
-	\begin{tabular}{|l|c|l|}
+	\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		& Index checking                                              & Range checking                                                   \\ \hline
-		Scala  &               \ding{52}                                              & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   (statically check)\end{tabular} \\ \hline
-		Swift  & \ding{52}                                                           & \ding{52}                                                                \\ \hline
-		F\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
-		Rust   & \begin{tabular}[c]{@{}c@{}}\ding{52}\\   (at run time)\end{tabular} & -                                                                \\ \hline
-		Vb.net & \ding{52}                                                           & \ding{52}                                                                \\ \hline
-		C\#    & \ding{52}                                                           & \ding{52}                                                                \\ \hline
-		D      & \ding{54}                                                           & \ding{52}                                                                \\ \hline
-		Oz     & -                                                           & -                                                                \\ \hline
-		Matlab & \ding{52}                                                           & \begin{tabular}[c]{@{}l@{}}\ding{52}(statically\\   check)\end{tabular}  \\ \hline
-		Python & \ding{52}                                                           & \ding{52}                                                                \\ \hline
+		\textbf{}        & \textbf{\begin{tabular}[c]{@{}l@{}}Pre-Post \\ conditions\end{tabular}} & \textbf{Quantification} & \textbf{\begin{tabular}[c]{@{}l@{}}Pre-State \\ Values\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Global \\ Assertions\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Language \\ Integration\end{tabular}}                                                                                                                                                                                               \\ \hline
+		\textbf{Scala}   & ding{54}                                                                      &                         & \ding{54}                                                                  & \ding{54}                                                                   & import org.scalatest.Assertions.\_                                                                                                                                                                                                                                     \\ \hline
+		\textbf{Swift}   &                                                                         &                         &                                                                      &                                                                       &                                                                                                                                                                                                                                                                        \\ \hline
+		\textbf{Falcon}  & \ding{52}                                                                     & \ding{52}                     & \ding{54}                                                                  & \ding{52}                                                                   & import falcon                                                                                                                                                                                                                                                          \\ \hline
+		\textbf{F\#}     & \ding{54}                                                                     & \ding{54}                     & \ding{54}                                                                  & \ding{54}                                                                   & \begin{tabular}[c]{@{}l@{}}open FsUnit\\   {[}\textless{}AbstractClass\textgreater{}{]}{[}\textless{}Sealed\textgreater{}{]}type Assert = class end\end{tabular}                                                                                                       \\ \hline
+		\textbf{Rust}    & \ding{52}                                                                     & \ding{52}                     & \ding{52}                                                                  & \ding{52}                                                                   &                                                                                                                                                                                                                                                                        \\ \hline
+		\textbf{Vb .Net} & \ding{54}                                                                     & \ding{54}                     & \ding{54}                                                                  & \ding{54}                                                                   & \begin{tabular}[c]{@{}l@{}}Debug.Assert Method\\   System.Diagnostics\\   Namespace\\   Public NotInheritable Class Assert\end{tabular}                                                                                                                                \\ \hline
+		\textbf{C\#}     & \ding{54}                                                                     & \ding{54}                     & \ding{54}                                                                  & \ding{54}                                                                   & \begin{tabular}[c]{@{}l@{}}assert method in class Debug\\   public static class Assert\end{tabular}                                                                                                                                                                    \\ \hline
+		\textbf{D}       & \ding{54}                                                                     & \ding{54}                     & \ding{54}                                                                  & \ding{54}                                                                   & \ding{54}                                                                                                                                                                                                                                                                    \\ \hline
+		\textbf{Oz}      & \ding{52}                                                                     & \ding{52}                     & \ding{52}                                                                  & \ding{52}                                                                   & export Literals Assert                                                                                                                                                                                                                                                 \\ \hline
+		\textbf{Matlab}  & \ding{52}                                                                     & \ding{52}                     & \ding{52}                                                                  & \ding{54}                                                                   & \ding{52}, python, c,c++, C\#, java, fortran                                                                                                                                                                                                                                 \\ \hline
+		\textbf{R}       & \ding{52}                                                                     & \ding{52}                     & \ding{52}                                                                  & \ding{52}                                                                   & \begin{tabular}[c]{@{}l@{}}assertthat\\   -assert\_that() signal an error\\   -see\_if() returns\\   a logical value, with the error message as an attribute.\\   -validate\_that() returns TRUE on\\   success, otherwise returns the error as a string.\end{tabular} \\ \hline
+		\textbf{Python}  & \ding{52}                                                                     & \ding{52}                     & \ding{54}                                                                  & \ding{54}                                                                   & assert method                                                                                                                                                                                                                                                          \\ \hline
+		\textbf{}        & \begin{tabular}[c]{@{}l@{}}Pre-Post \\ conditions\end{tabular}          & Quantification          & \begin{tabular}[c]{@{}l@{}}Pre-State \\ Values\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Global \\ Assertions\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Language \\ Integration\end{tabular}                                                                                                                                                                                                        \\ \hline
 	\end{tabular}
-\end{table}
-
-\subsubsection{Examples}
-\subsubsection{Scala}
-Array representation in scala \\
-scala> val a1 = Array(1, 2, 3) \\
-a1: Array[Int] = Array(1, 2, 3)
-\subsubsection{Swift-range checking }
-func contains(Bound)
-Returns a Boolean value indicating whether the given element is contained within the range.
+\end{table*}
 
 
-\subsection{Type Safety}
-The compiler will validate types and through an error if you assign a wrong type to a variable. 
-Type safety is checking for matched data types during compile time. For example, int a ="John" returns error as variable 'a' is an integer and we are assigning a string value. These data type mismatches are checked during compile time. Type safe code can access only the memory locations that it has permission to execute. Type safe code can never access any private members of an object. Type safe code ensures that objects are isolated from each other and are therefore safe for inadvertent or malicious corruption
-\subsubsection{The advantages type safety }
-At compile time, we get an error when a type instance is being assigned to an incompatible type; hence preventing an error at runtime. So at compilation time itself, developers come to know such errors and code will be modified to correct the mistake. So developers get more confidence in their code.
-Run time type safety ensures, we don't get strange memory exceptions and inconsistent behavior in the application.
 
-\subsubsection{scala}
-Scala is strongly type and smart about static type. Scala has powerful type inference. It will figure out itself mostly no need to tell it the types of your variables. 
-\subsubsection{Swift}
-Swift is type safe, it performs type checks when compiling code and flags any mismatched types as errors. This help in early catch and fix error in the development process. 
-It provides type inference which basically means that coders don’t require to spend more time in defining what types of variables they are using.
-\subsubsection{F\#}
-In f\#, static type checking can use almost as an instant unit test – making sure that your code is correct at compile time.
-F\# is more type-safe than C\#, and how the F\# compiler can catch errors that would only be detected at runtime in C\#.
-\subsubsection{Rust }
-Rust is a type-safe language. Rust has an escape valve from the safety rules. When you absolutely have to use a raw pointer. This is called unsafe code, and while most Rust programs dont need it, 
-how to use it and how it fits into Rust\'s overall safety scheme in
- \\ https://www.safaribooksonline.com/library/view/programming-rust/9781491927274/ch21.html\#unsafe-code
-
-\subsubsection{VB.net}
-Type safety in .NET has been introduced to prevent the objects of one type from peeking into the memory assigned for the other object.
-\subsubsection{C\#}
-Type safety prevents assigning a type to another type when are not compatible.
-public class Employee{}
-
-public class Student{}
-In the above example, Employee and Student are two incompatible types. We cannot assign an object of employee class to Student class variable. If you try doing so, you will get an error during the compilation process. Type safety check happens at compile time it's called static type checking
-Example
-Cannot implicitly convert type 'Program.Employee' to 'Program.Student'.
-. When tried to type cast object of wrong type. We get 
-Unable to cast object of type ‘first object’ to ‘second object’
-type checking happens at runtime, hence it is called runtime type checking
-\subsubsection{D}
-D has compile-time type safety. 
-\subsubsection{OZ }
-OZ also known as MOZART. Oz variables are single-assignment variables or more appropriately logic variables. A single assignment variable has a number of phases in its lifetime. Initially it is introduced with unknown value, and later it might be assigned a value, in which case the variable becomes bound. Once a variable is bound, it cannot itself be changed.
-\subsubsection{Matlab}
-MATLAB is a loosely or weakly-typed language. Difference between MATLAB and a strongly-typed language is that you don't have to explicitly declare the types of the variables you use. For example, the declarations x=5; x='foo' immediately following one another are perfectly acceptable; the first declaration causes x to be treated as a number, the second changes its treatment to a string
-\subsubsection{Python}
-Python or Ruby are often referred to as dynamically typed languages, which throw exceptions to signal type errors occurring during execution
-\\
-% Please add the following required packages to your document preamble:
-% \usepackage[normalem]{ulem}
-% \useunder{\uline}{\ul}{}
-\begin{table}[]
-	\centering
-	\caption{Type Safety}
-	\label{my-label}
-	\begin{tabular}{|l|c|}
-		\hline
-		Languages & Type Safety                                                                                                                           \\ \hline
-		Scala     & \begin{tabular}[c]{@{}c@{}}Strongly type, \\ Static type, \\ powerful type Inference\end{tabular}                                     \\ \hline
-		Swift     & \begin{tabular}[c]{@{}c@{}}Type check at compile time, \\ Support type inference\end{tabular}                                         \\ \hline
-		F\#       & \begin{tabular}[c]{@{}c@{}}Static Type Checking,\\ Compile Time\end{tabular}                                                          \\ \hline
-		Rust      & \begin{tabular}[c]{@{}c@{}}Type Safe, \\ escape valve, \\ unsafe to use raw pointers\end{tabular}                                     \\ \hline
-		VB.net    & Type safety use for memory security                                                                                                   \\ \hline
-		C\#       & \begin{tabular}[c]{@{}c@{}}Static type checking,\\  type checking compile time\end{tabular}                                           \\ \hline
-		D         & \begin{tabular}[c]{@{}c@{}}Type safe, \\ compile time\end{tabular}                                                                    \\ \hline
-		Oz        & \begin{tabular}[c]{@{}c@{}}Single Assignment variables, \\ Once value is assigned to\\   variable it can never be change\end{tabular} \\ \hline
-		Matlab    & \begin{tabular}[c]{@{}c@{}}Weakly type language, \\ no need to assign type explicitly,\end{tabular}                                   \\ \hline
-		Python    & Dynamically type language,                                                                                                            \\ \hline
-	\end{tabular}
-\end{table}
-
-\subsection{Exception Handling}
-An exception handler is a block of code that is executed if an exception occurs during the execution of some other block of code. In this sense, exceptions are a kind of control statement. Raising an exception transfers the flow-of-control to exception handling code. User can also throw own created exception.
-\begin{table}[]
+\begin{table*}[]
 \centering
-
-\begin{tabular}{|l|l|l|l|}
-\hline
-\begin{tabular}[c]{@{}l@{}}Lang\\ .\end{tabular}  & Throw                                                             & Handler                                                                                                                                                                                                              & Assertion                                                                                  \\ \hline
-\begin{tabular}[c]{@{}l@{}}Sca\\ la\end{tabular}  & throw                                                             & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\  catch (exception) \\ \{ instructions\}\\  finally\{instructions\}\end{tabular}                                                                                  & \begin{tabular}[c]{@{}l@{}}Assert(stat\\ ement)\end{tabular}                               \\ \hline
-\begin{tabular}[c]{@{}l@{}}Swi\\ ft\end{tabular}  & \begin{tabular}[c]{@{}l@{}}throw exce\\ ption ()\end{tabular}     & \begin{tabular}[c]{@{}l@{}}do\\ \{ try expression ...\\  instructions \}\\  catch exception\\ \{ instructions \}\end{tabular}                                                                                        & \begin{tabular}[c]{@{}l@{}}assert(condi\\ tion,descrip\\ tion)\end{tabular}                \\ \hline
-\begin{tabular}[c]{@{}l@{}}Falc\\ on\end{tabular} & \begin{tabular}[c]{@{}l@{}}raise excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}falcon.HTTPError\\ (status,title=None,\\ description=\\ None)\end{tabular}                                                                                                                &                                                                                            \\ \hline
-F\#                                               & \begin{tabular}[c]{@{}l@{}}raise exce\\ ption\end{tabular}        & \begin{tabular}[c]{@{}l@{}}try expression\\ with pattern \\ or\\ try expression \\ finally expression\end{tabular}                                                                                                   & \begin{tabular}[c]{@{}l@{}}assert cond\\ ition\end{tabular}                                \\ \hline
-Rust                                              & \begin{tabular}[c]{@{}l@{}}Err(excep\\ tion)\end{tabular}         & \begin{tabular}[c]{@{}l@{}}match fun\_nam(x,y)\\  \{\\           Ok(v) =\textgreater \{\\  println!("\{\}", v); \},\\           Err(err) =\textgreater \{\\   println!("\{\}", err);\\  \}\}\end{tabular}            &                                                                                            \\ \hline
-\begin{tabular}[c]{@{}l@{}}Vb\\ .Net\end{tabular} & \begin{tabular}[c]{@{}l@{}}throw excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Try\\ instructions\\ Catch exception \\ When condition\\   instructions\\   ...\\   Finally\\   instructions\\   End Try\end{tabular}                                                     & \begin{tabular}[c]{@{}l@{}}Debug.Ass\\ ert(condi\\ tion)\end{tabular}                      \\ \hline
-C\#                                               & \begin{tabular}[c]{@{}l@{}}throw excep\\ tion;\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   & \begin{tabular}[c]{@{}l@{}}Debug.Ass\\ ert(condi\\ tion);\end{tabular}                     \\ \hline
-D                                                 & throw                                                             & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   &                                                                                            \\ \hline
-Oz                                                & \begin{tabular}[c]{@{}l@{}}\{exception.\\ 'raise'X\}\end{tabular} & \begin{tabular}[c]{@{}l@{}}try S catch \\   Pattern\_1 then S1 \\   Pattern\_2 then S2 \\  finally \\    S\_final \\  end\end{tabular}                                                                               &                                                                                            \\ \hline
-\begin{tabular}[c]{@{}l@{}}Mat\\ lab\end{tabular} & \begin{tabular}[c]{@{}l@{}}throw(excep\\ tion)\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try\\ tab statements\\ catch exception\\ tab statements\\  end\end{tabular}                                                                                                               & \begin{tabular}[c]{@{}l@{}}assertError\\ (assert\\ able,actual,\\ identifier)\end{tabular} \\ \hline
-R                                                 & throw()                                                           & \begin{tabular}[c]{@{}l@{}}tryCatch(\{\\       expr\},\\  war=function(w)\{\\  warning-handler-\\ code\},\\  error = function(e)\\  \{error-handler-\\ code\}, finally = \{\\       cleanup-code\\   \}\end{tabular} & \begin{tabular}[c]{@{}l@{}}assertError\\ (expr,verbo\\ se=FALSE)\end{tabular}              \\ \hline
-\begin{tabular}[c]{@{}l@{}}Pyth\\ on\end{tabular} & \begin{tabular}[c]{@{}l@{}}raise excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}try:\\   Tab instructions\\   except exception:\\   Tab instructions\\   else:\\   Tab instructions\\   finally:\\   Tab  instruction\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}assert cond\\ ition\end{tabular}                                \\ \hline
-\end{tabular}
-\caption{Exception Handling syntax in different languages  }
+\caption{Assertion - 2}
 \label{my-label}
-\end{table}
-\subsection{Meta-programming}
-Meta-programming is the capability to adapt itself (meta stack overflow which is the place to ask question about stack overflow itself). We can also say the ability to treat programs as their data. It means that a program can be designed to read, generate, analyze or transform other programs, and even modify itself while running. Meta-programming is not one specific technique, but rather an ensemble of concepts and techniques. There are two different ways of doing metaprogramming: on the Syntax level and at Runtime.\\
-ection explain these components.
-\begin{itemize}
-  \item \textbf{Features for Syntax:} These are feature of languages through which Syntax meta-programming apply.
-  \item \textbf{Features for Runtime:} These are feature of languages through which Runtime meta-programming apply.
-\end{itemize}
-\textbf{Reflection:} is the ability of a computer program to examine, introspect, and modify its own structure and behavior at runtime.
-\begin{table}[]
-\centering
 \begin{tabular}{|l|l|l|l|l|}
-\hline
-\begin{tabular}[c]{@{}l@{}}Prog. \\ Lang.\end{tabular} & \multicolumn{2}{l|}{Ways of Doing}                                                                          & \begin{tabular}[c]{@{}l@{}}Features\\ for compile\\ time\end{tabular} & \begin{tabular}[c]{@{}l@{}}Features\\ for Run\\ Time\end{tabular} \\ \hline
-                                                       & \begin{tabular}[c]{@{}l@{}}Compile\\ Time\end{tabular} & \begin{tabular}[c]{@{}l@{}}Run\\ Time\end{tabular} &                                                                       &                                                                   \\ \hline
-R                                                      &                                                        & \Checkmark                                                  &                                                                       & Objects                                                           \\ \hline
-Scala                                                  & \Checkmark                                                      & \Checkmark                                                  & Reflection                                                            & Macros                                                            \\ \hline
-Swift                                                  & \Checkmark                                                      &                                                    &                                                                       & Templates                                                         \\ \hline
-Falcon                                                 & \Checkmark                                                      &                                                    &                                                                       & Macro                                                             \\ \hline
-F\#                                                    & \Checkmark                                                      & \Checkmark                                                  &                                                                       & Quotation                                                         \\ \hline
-Rust                                                   & \Checkmark                                                      &                                                    &                                                                       & Macros                                                            \\ \hline
-VB.net                                                 & \Checkmark                                                      & \Checkmark                                                  & Reflection                                                            & Reflection                                                        \\ \hline
-C\#                                                    &                                                        & \Checkmark                                                  &                                                                       & Objects                                                           \\ \hline
-D                                                      & \Checkmark                                                      &                                                    &                                                                       & Template                                                          \\ \hline
-Oz                                                     & x                                                      & x                                                  &                                                                       &                                                                   \\ \hline
-Matlab                                                 & x                                                      & x                                                  &                                                                       &                                                                   \\ \hline
-Python                                                 &                                                        & \Checkmark                                                  &                                                                       & \begin{tabular}[c]{@{}l@{}}meta-\\ classes\end{tabular}           \\ \hline
+	\hline
+	\textbf{}        & \textbf{Security Levels}                                                      & \textbf{\begin{tabular}[c]{@{}l@{}}enabling \\ / disabling \\ assertions\end{tabular}}                                                                                                  & \textbf{\begin{tabular}[c]{@{}l@{}}debugging\\  support\end{tabular}}                          & \textbf{inheritance}                                                                                                               \\ \hline
+	\textbf{Scala}   & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}assume\\   fail\\   cancel\\   succeed\\   intercept\\   exception\\   assertDoesNotCompile\\   assertCompiles\\   assertTypeError\\   withClue\end{tabular} & \begin{tabular}[c]{@{}l@{}}Scala Debugger\\    Intellij IDEA\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
+	\textbf{Swift}   &                                                                               &                                                                                                                                                                                         &                                                                                                &                                                                                                                                    \\ \hline
+	\textbf{Falcon}  & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}falcon command \\ line interpreter\end{tabular}                     & \ding{54}                                                                                                                                \\ \hline
+	\textbf{F\#}     & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}.NET debugger\\   System. Diagnostic.\\  Debug. Assert\end{tabular} & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
+	\textbf{Rust}    & \ding{54}                                                                           & \ding{52}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}debug\_assert!\\   interpreter\end{tabular}                         & \ding{54}                                                                                                                                \\ \hline
+	\textbf{Vb .Net} & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}VBasic .Net \\ Debugger\end{tabular}                                & \ding{52}                                                                                                                                \\ \hline
+	\textbf{C\#}     & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NET’s Base \\ Class Library (BCL) \\ supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                     & C\# debugger                                                                                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
+	\textbf{D}       & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
+	\textbf{Oz}      & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
+	\textbf{Matlab}  & \begin{tabular}[c]{@{}l@{}}fatalAssertThat\\   fataAssertWarning\end{tabular} & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   global NDEBUG;\\  NDEBUG=true;\end{tabular}                                                                                                          & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   matlab\end{tabular}                                         & \ding{54}                                                                                                                                \\ \hline
+	\textbf{R}       & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   customized assert \\ statements \\ can also be written\end{tabular}                                                                                  & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
+	\textbf{Python}  & \ding{54}                                                                           & \ding{52}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   python interpreter\end{tabular}                             & \ding{52}                                                                                                                                \\ \hline
+	\textbf{}        & Security Levels                                                               & \begin{tabular}[c]{@{}l@{}}enabling \\ / disabling \\ assertions\end{tabular}                                                                                                           & \begin{tabular}[c]{@{}l@{}}debugging \\ support\end{tabular}                                   & inheritance                                                                                                                        \\ \hline
 \end{tabular}
-\caption{Meta programming features in different languages}
-\label{my-label}
-\end{table}
+	\end{table*}
+	\subsection{Conditional compilation}
+	Conditional compilation is a method of producing different results by different parameters provided during compilation of the program. This technique is used when a program is built for different platforms or to run or not to run specific portion of code in a certain condition or to run a program with different version etc. For example, in case of error program should display a debug report so, in C, \#ifdef will be used to define a debug. In HTML, different display sizes can be difined for different plateforms like desktop, tablet, mobile etc. A compiler may be set to define different operating systems like windows, linux, mac etc. to compile the code accordingly. Similarly for javaascript versioning for different browsers etc. 
+	\subsection{File handling}
+	File handling is used where data is required to be provided to the program from and to an external source, not using keyboard during program compilation. Data is stored in files that will be used by program during execution. Using file handling technique, data will be read from the file as soon as it requires without waiting for human user to input. Similarly information (output) will be saved to file and program execution will proceed without user to make any interaction like "Press any key to continue...". File handling has three steps 1) Opening a file: Opening a file for reading data from or writing data to an external file. 2) Reading/writing data: Reading data as input for program to store values in variables and operate on it or writing output to the file. 3) Closing a file: Closing the file once it's use is over. A file can be closed as soon as it's use is over or it can be closed at the end of program execution before closing the program.
+	\subsection{Imutable}
+	In Muti-paradigm programming languages, an immutable object is an object whose state cannot be modified after it is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created. In some cases, an object is considered immutable even if some internally used attributes change but the object's state appears to be unchanging from an external point of view. For example, an object that uses memoization to cache the results of expensive computations could still be considered an immutable object.
+	
+	\begin{table}[]
+		\centering
+		\caption{Table of conditional compilation}
+		\label{my-label}
+		\begin{tabular}{|l|l|}
+			\hline
+			& Conditional Compilation                                                                                                                                      \\ \hline
+			Scala   & \begin{tabular}[c]{@{}l@{}}scala.language.experimental.macros\\ elidable\end{tabular}                                                                        \\ \hline
+			Swift   & \#if condition                                                                                                                                               \\ \hline
+			Falcon  &                                                                                                                                                              \\ \hline
+			F\#     &                                                                                                                                                              \\ \hline
+			Rust    & \begin{tabular}[c]{@{}l@{}}\#\{{[}\}cfg\{{]}\}\\ for example \#\{{[}\}cfg(foo)\{{]}\}\end{tabular}                                                           \\ \hline
+			Vb .net & \#ifthen\#else                                                                                                                                             \\ \hline
+			C\#     & \#if                                                                                                                                                         \\ \hline
+			D       & \begin{tabular}[c]{@{}l@{}}debug \{    // ... conditionally \\ compiled code ... \} else \{    // ... code \\ that is compiled otherwise ... \}\end{tabular} \\ \hline
+			Oz      &                                                                                                                                                              \\ \hline
+			Matlab  & \begin{tabular}[c]{@{}l@{}}\#if (condition) \{do something\} \\ \#else \{do something else\} \#end\end{tabular}                                              \\ \hline
+			R       &                                                                                                                                                              \\ \hline
+			Python  &                                                                                                                                                              \\ \hline
+		\end{tabular}
+	\end{table}
 
-\subsection{Compiled / interpreted}
-Compiled/interpreted: The difference lies not in the language but how the language has been implemented. A compiler translates the source code of the program into another language format that can be directly executed by a lower-level machine. This can be an abstract machine (such as .NET or the Java Virtual Machine) or the actual machine. In the latter case, the language format that is the target of the compiler is machine code. The translation from source code into lower-level code depends on the abstract syntax and on the operational semantics of the programming language. An interpreter executes the source code directly; informally, it may help to think of the interpreter as executing the program line by line. A more correct understanding is that the interpreter walks through the abstract syntax tree generated by the parser and executes each node in this tree. If a node is a leaf, the leaf is executed. If a node is an internal node, each sub-tree is visited and executed. Exactly how this is to be done depends on the abstract syntax and on the underlying semantics of the programming language.
-Out of the many programming languages in this world, some of them are called compiled languages while some are interpreted. For compilation, the software uses is called compiler while for interpreter is used for interpreted language. For a compiled language, an interpreter can be built but the reverse is impossible. That is, all the interpreted languages cannot be a compiled language. Additionally, being interpreted or compiled is not the property of the programming languages, but the design of some languages make them unsuitable for native code generation.
-\begin{table*}[]
-\centering
-\caption{compiled vs interpreted}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
-\hline
-        & compiled                                                                                                                                                                                                                                                                                                                                           & interpreted                                                                                                                 & Pre-State Values & Global Assertions & Language Integration                                                                                                                                                                                                                                                   & Security Levels                                                               & enabling / disabling assertions                                                                                                                                                         & debugging support                                                                           & hidden functions & inheritance                                                                                                                   \\ \hline
-Scala   & \begin{tabular}[c]{@{}l@{}}actually a compiled , wherein\\   everything you type gets compiled to the byte code and it runs within the\\   JVM.\end{tabular}                                                                                                                                                                                       & illusion of interpreted                                                                                                     & no               & no                & \begin{tabular}[c]{@{}l@{}}import\\   org.scalatest.Assertions.\_\end{tabular}                                                                                                                                                                                         & no                                                                            & \begin{tabular}[c]{@{}l@{}}assume\\   fail\\   cancel\\   succeed\\   intercept\\   exception\\   assertDoesNotCompile\\   assertCompiles\\   assertTypeError\\   withClue\end{tabular} & \begin{tabular}[c]{@{}l@{}}Scala Debugger\\    Intellij IDEA\end{tabular}                   & no               & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that\\   contains asserts\end{tabular} \\ \hline
-Swift   & compiled                                                                                                                                                                                                                                                                                                                                           &                                                                                                                             &                  &                   &                                                                                                                                                                                                                                                                        &                                                                               &                                                                                                                                                                                         &                                                                                             &                  &                                                                                                                               \\ \hline
-Falcon  & \begin{tabular}[c]{@{}l@{}}compiled, The Falcon compiler contains a meta-compiler{[}23{]} that\\   supports macro expansions. A Falcon Virtual Machine in the standard compiler\\   drives the meta-compiler. Output generated from the meta-compiler is sent to\\   the language lexer as if part of the original source.\end{tabular}            &                                                                                                                             & no               & yes               & import falcon                                                                                                                                                                                                                                                          & no                                                                            & no                                                                                                                                                                                      & falcon command line interpreter                                                             & no               & no                                                                                                                            \\ \hline
-F\#     & \begin{tabular}[c]{@{}l@{}}compiled, open source cross platform compiler from F\# Software\\   Foundation\end{tabular}                                                                                                                                                                                                                             &                                                                                                                             & no               & no                & \begin{tabular}[c]{@{}l@{}}open FsUnit\\   {[}\textless{}AbstractClass\textgreater{}{]}{[}\textless{}Sealed\textgreater{}{]}type Assert = class end\end{tabular}                                                                                                       & no                                                                            & no                                                                                                                                                                                      & \begin{tabular}[c]{@{}l@{}}.NET debugger\\   System. Diagnostic. Debug. Assert\end{tabular} & no               & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that contains\\   asserts\end{tabular} \\ \hline
-Rust    & \begin{tabular}[c]{@{}l@{}}compiled.\\   First, the Rust compiler does all the Rust specific stuff like\\   type and borrow checking; in the end, it generates LLVM-IR. IR stands for\\   intermediate representation and it's comparable to assembly, but a tiny bit\\   more high level and most importantly: platform independent.\end{tabular} &                                                                                                                             & yes              & yes               &                                                                                                                                                                                                                                                                        & no                                                                            & yes                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}debug\_assert!\\   interpreter\end{tabular}                      & no               & no                                                                                                                            \\ \hline
-Vb .Net & version 6 and above, both compiled and interpreted                                                                                                                                                                                                                                                                                                 & interpreted                                                                                                                 & no               & no                & \begin{tabular}[c]{@{}l@{}}Debug.Assert Method\\   System.Diagnostics\\   Namespace\\   Public NotInheritable Class Assert\end{tabular}                                                                                                                                & no                                                                            & no                                                                                                                                                                                      & VBasic .Net Debugger                                                                        & no               & yes                                                                                                                           \\ \hline
-C\#     & compiled                                                                                                                                                                                                                                                                                                                                           &                                                                                                                             & no               & no                & \begin{tabular}[c]{@{}l@{}}assert method in class Debug\\   public static class Assert\end{tabular}                                                                                                                                                                    & no                                                                            & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NET’s Base Class Library (BCL) supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                           & C\# debugger                                                                                & no               & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that\\   contains asserts\end{tabular} \\ \hline
-D       & compiled                                                                                                                                                                                                                                                                                                                                           &                                                                                                                             & no               & no                & no                                                                                                                                                                                                                                                                     & no                                                                            & no                                                                                                                                                                                      & no                                                                                          & no               & no                                                                                                                            \\ \hline
-Oz      & \begin{tabular}[c]{@{}l@{}}yes, Oz code can be\\   compiled into command line executables. The compiled code is not native\\   binary, but a shell script-wrapper with embedded Oz virtual machine bytecode.\end{tabular}                                                                                                                          & yes                                                                                                                         & yes              & yes               & export Literals Assert                                                                                                                                                                                                                                                 & no                                                                            & no                                                                                                                                                                                      & no                                                                                          & no               & no                                                                                                                            \\ \hline
-Matlab  &                                                                                                                                                                                                                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}yes,  you can\\   write code and just execute it from the IDE, without compilation.\end{tabular} & yes              & no                & yes, python, c,c++, C\#, java, fortran                                                                                                                                                                                                                                 & \begin{tabular}[c]{@{}l@{}}fatalAssertThat\\   fataAssertWarning\end{tabular} & \begin{tabular}[c]{@{}l@{}}yes\\   global NDEBUG; NDEBUG=true;\end{tabular}                                                                                                             & \begin{tabular}[c]{@{}l@{}}yes\\   matlab\end{tabular}                                      & no               & no                                                                                                                            \\ \hline
-R       & \begin{tabular}[c]{@{}l@{}}an interface to compiled code,\\   because all key routines are run in compiled code (through\\   .C, .Call., .Internal, .Primitive interfaces, etc.) But does not compile\end{tabular}                                                                                                                                 & yes                                                                                                                         & yes              & yes               & \begin{tabular}[c]{@{}l@{}}assertthat\\   -assert\_that() signal an error\\   -see\_if() returns\\   a logical value, with the error message as an attribute.\\   -validate\_that() returns TRUE on\\   success, otherwise returns the error as a string.\end{tabular} & no                                                                            & \begin{tabular}[c]{@{}l@{}}yes\\   customized assert statements can also be written\end{tabular}                                                                                        & no                                                                                          & no               & no                                                                                                                            \\ \hline
-Python  &                                                                                                                                                                                                                                                                                                                                                    & yes                                                                                                                         & no               & no                & assert method                                                                                                                                                                                                                                                          & no                                                                            & yes                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}yes\\   python interpreter\end{tabular}                          & no               & yes                                                                                                                           \\ \hline
-        & Pre-Post conditions                                                                                                                                                                                                                                                                                                                                & Quantification                                                                                                              & Pre-State Values & Global Assertions & Language Integration                                                                                                                                                                                                                                                   & Security Levels                                                               & enabling / disabling assertions                                                                                                                                                         & debugging support                                                                           & hidden functions & inheritance                                                                                                                   \\ \hline
-\end{tabular}
-\end{table*}
-
-\subsection{Assertion}
-Assertion: specifies that a program satisfies certain conditions at particular points in its execution. An assertion violation indicates a bug in the program. Thus, assertions are an effective means of improving the reliability of programs and function as a systematic debugging tool. There are three types of assertion: pre-conditions, post-conditions and invariants. Preconditions specify conditions at the start of a function; post-conditions specify conditions at the end of a function while invariants specify conditions over a defined region of a program. Asserts are to be used primarily for checking parameter types, classes, or values, checking data structure invariants, checking "can't happen" situations (duplicates in a list, contradictory state variables) or after calling a function, to make sure that its return is reasonable. However, asserts are not to be used for handling run-time errors, like entering a negative number when positive is needed. But used to catching the program errors.
-\begin{table*}[]
-\centering
-\caption{Assertion}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-\hline
-        & Pre-Post conditions & Quantification & Pre-State Values & Global Assertions & Language Integration                                                                                                                                                                                                                                                   & Security Levels                                                               & enabling / disabling assertions                                                                                                                                                         & debugging support                                                                           & inheritance                                                                                                                   \\ \hline
-Scala   & no                  &                & no               & no                & import org.scalatest.Assertions.\_                                                                                                                                                                                                                                     & no                                                                            & \begin{tabular}[c]{@{}l@{}}assume\\   fail\\   cancel\\   succeed\\   intercept\\   exception\\   assertDoesNotCompile\\   assertCompiles\\   assertTypeError\\   withClue\end{tabular} & \begin{tabular}[c]{@{}l@{}}Scala Debugger\\    Intellij IDEA\end{tabular}                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that\\   contains asserts\end{tabular} \\ \hline
-Swift   &                     &                &                  &                   &                                                                                                                                                                                                                                                                        &                                                                               &                                                                                                                                                                                         &                                                                                             &                                                                                                                               \\ \hline
-Falcon  & yes                 & yes            & no               & yes               & import falcon                                                                                                                                                                                                                                                          & no                                                                            & no                                                                                                                                                                                      & falcon command line interpreter                                                             & no                                                                                                                            \\ \hline
-F\#     & no                  & no             & no               & no                & \begin{tabular}[c]{@{}l@{}}open FsUnit\\   {[}\textless{}AbstractClass\textgreater{}{]}{[}\textless{}Sealed\textgreater{}{]}type Assert = class end\end{tabular}                                                                                                       & no                                                                            & no                                                                                                                                                                                      & \begin{tabular}[c]{@{}l@{}}.NET debugger\\   System. Diagnostic. Debug. Assert\end{tabular} & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that contains\\   asserts\end{tabular} \\ \hline
-Rust    & yes                 & yes            & yes              & yes               &                                                                                                                                                                                                                                                                        & no                                                                            & yes                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}debug\_assert!\\   interpreter\end{tabular}                      & no                                                                                                                            \\ \hline
-Vb .Net & no                  & no             & no               & no                & \begin{tabular}[c]{@{}l@{}}Debug.Assert Method\\   System.Diagnostics\\   Namespace\\   Public NotInheritable Class Assert\end{tabular}                                                                                                                                & no                                                                            & no                                                                                                                                                                                      & VBasic .Net Debugger                                                                        & yes                                                                                                                           \\ \hline
-C\#     & no                  & no             & no               & no                & \begin{tabular}[c]{@{}l@{}}assert method in class Debug\\   public static class Assert\end{tabular}                                                                                                                                                                    & no                                                                            & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NET’s Base Class Library (BCL) supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                           & C\# debugger                                                                                & \begin{tabular}[c]{@{}l@{}}subclass inherits any non-overridden methods in super class that\\   contains asserts\end{tabular} \\ \hline
-D       & no                  & no             & no               & no                & no                                                                                                                                                                                                                                                                     & no                                                                            & no                                                                                                                                                                                      & no                                                                                          & no                                                                                                                            \\ \hline
-Oz      & yes                 & yes            & yes              & yes               & export Literals Assert                                                                                                                                                                                                                                                 & no                                                                            & no                                                                                                                                                                                      & no                                                                                          & no                                                                                                                            \\ \hline
-Matlab  & yes                 & yes            & yes              & no                & yes, python, c,c++, C\#, java, fortran                                                                                                                                                                                                                                 & \begin{tabular}[c]{@{}l@{}}fatalAssertThat\\   fataAssertWarning\end{tabular} & \begin{tabular}[c]{@{}l@{}}yes\\   global NDEBUG; NDEBUG=true;\end{tabular}                                                                                                             & \begin{tabular}[c]{@{}l@{}}yes\\   matlab\end{tabular}                                      & no                                                                                                                            \\ \hline
-R       & yes                 & yes            & yes              & yes               & \begin{tabular}[c]{@{}l@{}}assertthat\\   -assert\_that() signal an error\\   -see\_if() returns\\   a logical value, with the error message as an attribute.\\   -validate\_that() returns TRUE on\\   success, otherwise returns the error as a string.\end{tabular} & no                                                                            & \begin{tabular}[c]{@{}l@{}}yes\\   customized assert statements can also be written\end{tabular}                                                                                        & no                                                                                          & no                                                                                                                            \\ \hline
-Python  & yes                 & yes            & no               & no                & assert method                                                                                                                                                                                                                                                          & no                                                                            & yes                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}yes\\   python interpreter\end{tabular}                          & yes                                                                                                                           \\ \hline
-        & Pre-Post conditions & Quantification & Pre-State Values & Global Assertions & Language Integration                                                                                                                                                                                                                                                   & Security Levels                                                               & enabling / disabling assertions                                                                                                                                                         & debugging support                                                                           & inheritance                                                                                                                   \\ \hline
-\end{tabular}
-\end{table*}
-\subsection{Conditional compilation}
-Conditional compilation is a method of producing different results by different parameters provided during compilation of the program. This technique is used when a program is built for different platforms or to run or not to run specific portion of code in a certain condition or to run a program with different version etc. For example, in case of error program should display a debug report so, in C, \#ifdef will be used to define a debug. In HTML, different display sizes can be difined for different plateforms like desktop, tablet, mobile etc. A compiler may be set to define different operating systems like windows, linux, mac etc. to compile the code accordingly. Similarly for javaascript versioning for different browsers etc. 
-\subsection{File handling}
-File handling is used where data is required to be provided to the program from and to an external source, not using keyboard during program compilation. Data is stored in files that will be used by program during execution. Using file handling technique, data will be read from the file as soon as it requires without waiting for human user to input. Similarly information (output) will be saved to file and program execution will proceed without user to make any interaction like "Press any key to continue...". File handling has three steps 1) Opening a file: Opening a file for reading data from or writing data to an external file. 2) Reading/writing data: Reading data as input for program to store values in variables and operate on it or writing output to the file. 3) Closing a file: Closing the file once it’s use is over. A file can be closed as soon as it’s use is over or it can be closed at the end of program execution before closing the program.
-\subsection{Imutable}
-In Muti-paradigm programming languages, an immutable object is an object whose state cannot be modified after it is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created. In some cases, an object is considered immutable even if some internally used attributes change but the object's state appears to be unchanging from an external point of view. For example, an object that uses memoization to cache the results of expensive computations could still be considered an immutable object.
-
-\begin{table}[]
-\centering
-\caption{Table of conditional compilation}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-        & Conditional Compilation                                                                                                                                      \\ \hline
-Scala   & \begin{tabular}[c]{@{}l@{}}scala.language.experimental.macros\\ elidable\end{tabular}                                                                        \\ \hline
-Swift   & \#if condition                                                                                                                                               \\ \hline
-Falcon  &                                                                                                                                                              \\ \hline
-F\#     &                                                                                                                                                              \\ \hline
-Rust    & \begin{tabular}[c]{@{}l@{}}\#\{{[}\}cfg\{{]}\}\\ for example \#\{{[}\}cfg(foo)\{{]}\}\end{tabular}                                                           \\ \hline
-Vb .net & \#ifthen\#else                                                                                                                                             \\ \hline
-C\#     & \#if                                                                                                                                                         \\ \hline
-D       & \begin{tabular}[c]{@{}l@{}}debug \{    // ... conditionally \\ compiled code ... \} else \{    // ... code \\ that is compiled otherwise ... \}\end{tabular} \\ \hline
-Oz      &                                                                                                                                                              \\ \hline
-Matlab  & \begin{tabular}[c]{@{}l@{}}\#if (condition) \{do something\} \\ \#else \{do something else\} \#end\end{tabular}                                              \\ \hline
-R       &                                                                                                                                                              \\ \hline
-Python  &                                                                                                                                                              \\ \hline
-\end{tabular}
-\end{table}
-\subsection{Mutable}
-A mutable object, by contrast, has data fields that can be altered. One or more of its methods will change the contents of the object, or it has a Property that, when written into, will change the value of the object.
-If you have a mutable object- the most similar one to String is StringBuffer inC\#- then you have to make a copy of it if you want to be absolutely sure it won't change out from under you. This is why mutable objects are dangerous to use as keys into any form of Dictionary or set- the objects themselves could change, and the data structure would have no way of knowing, leading to corrupt data that would, eventually, crash your program.
-However, you can change its contents- so it's much, much more memory efficient than making a complete copy because you wanted to change a single character, or something similar.
-Generally, the right thing to do is use mutable objects while you're creating something, and immutable objects once you're done. This applies to objects that have immutable forms, of course; most of the collections don't. It's often useful to provide read-only forms of collections, though, which is the equivalent of immutable, when sending the internal state of your collection to other contexts- otherwise, something could take that return value, do something to it, and corrupt your data
-
-
-\begin{table}[]
-\centering
-\caption{Mutable programming features in different languages}
-\label{my-label}
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{2}{|c|}{Mutable}                     \\ \hline
-Scala  & var maxValue = 100                         \\ \hline
-Swift  & var (firstNumber, secondNumber) = (10, 42) \\ \hline
-Falcon & array={[}1,2,3{]}                          \\ \hline
-F\#    & let a = 1                                  \\ \hline
-Rust   & let a = 1                                  \\ \hline
-Vb.net & Dim num1  as Integer = 1                   \\ \hline
-C\#    & float PI = 3.14149                         \\ \hline
-D      & mutable int len = 1                        \\ \hline
-Oz     & \{Browse \{4+2\} div 2\}                   \\ \hline
-Matlab & h = 6.626068e-34;                          \\ \hline
-R      & a\textless{}- 1                            \\ \hline
-Python & var a = 1                                  \\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{imperative control}
-
-Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if…else, switch statements and iteration statements like for, while, do etc.
-\newline
-In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we’ll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
-
-
-\subsection{Explicit concurrency}
-
-We say two activities are concurrent of they are executing in parallel or if they can be interleaved. The one which encapsulates a single concurrent activity, joining with a compulsory mutable state, is known as concurrency unit. Whether stream concurrency enables two or more concurrent activities to use each one end of stream. This could be thought as producer-consumer communication. In shared state, a shared data structure is modified by concurrent activities. Serialization or code locking ensures code segment to be executed only when permitted. In message passing concurrency, messages are exchanged among the concurrent activities. Message passing could be in synchronous (wait until receiving message) mode or asynchronous (not wait) mode or combination of the two modes. Message could be defined as data which is transferred among the activities. Order of message sending may not be important from the point of underlying platform.
-\newline
-All the above multi-paradigm programming languages have disjunctions in many features that are important in context of programming. Very popular language for message passing concurrency is F# as it provides facility of MailBoxProcessor. Some that have good option to access feature of shared pool, are python and D. Although all the multi-paradigm languages provide facility of code locks, still python is best and also C# and VB.Net as well. Matlab and R don’t facilitate concurrency. These languages even don’t provide any mechanism for message passing concurrency and don’t include feature of stream concurrency. Table 9 describes comparison of imperative control structures among multi-paradigm programming languages. 
-
-
-\afterpage{\clearpage}
-
-
-\begin{table*}[H]
-\centering
-\caption{Imperative control of multi-paradigm programming laguaguages}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|}
-\hline                   \\ \hline
-Methods/Procedures & Method/Procedure Invocation & Method/Procedure Parameters & Method/Procedure Return               & Imperative conditional expressions                 & Iteration                                            &                               \\ \hline
-Scala              & Function                    & By name or function pointer & Positional, by val                    & No                                                 & If (x\textgreater{}y) \{max= x;\}else \{max=y;\}     & While, do-while, for          \\ \hline
-Swift              & Function                    & By name or function pointer & Positional, by val                    & Explicit, return, with termination                 & If x\textgreater{}y \{max= x;\}else \{max=y;\}       & For-in, while                 \\ \hline
-Falcon             & Function                    & By name or function pointer & Positional, by val                    & Explicit, with termination                         & If x\textgreater{}y \{max= x;\}else \{max=y;\}       & For, while                    \\ \hline
-F\#                & Function                    & By name                     & Positional, by val, by ref            & Explicit, return                                   & If (x\textgreater{}y) then num1 else num2            & While…do, for…in/to/downto    \\ \hline
-Rust               & Function                    & By name or function pointer & Positional, by value                  & No                                                 & If x\textgreater{}y \{max=x;\} else \{max=y;\}       & Loop, while, for-in           \\ \hline
-Vb .Net            & Sub                         & By name or function pointer & Positional, by value, by ref, by name & Explicit return                                    & If x\textgreater{}y then x else y endif              & While…end, do-loop, for…next, \\ \hline
-C\#                & Method                      & By name or function pointer & Positional, by value, by ref, by name & Explicit, return, with termination, by val, by ref & If (x\textgreater{}y) \{ max=x; \} else \{ max=y; \} & While, do-while, for, foreach \\ \hline
-D                  & Function                    & By name or function pointer & Positional, by value                  & Explicit, with termination, return                 & If (x\textgreater{}y) \{max=x;\} else \{max=y;\}     & While, do-while, for          \\ \hline
-Oz                 & Function                    & By name or function pointer & Positional, by val                    & No                                                 & if x\textgreater{}y then x else y end                & For – do…end                  \\ \hline
-Matlab             & Function                    & By name or function pointer & Positional, by value                  & No                                                 & If (x\textgreater{}y) x else y end                   & While, for                    \\ \hline
-R                  & Function                    & By name or function pointer & Positional, by value                  & Last exp in func body                              & If (x\textgreater{}y) \{max= x\}else \{max=y\}       & Repeat, While, for            \\ \hline
-Python             & Function                    & By name or function pointer & Positional, by value                  & return                                             & If x\textgreater{}y: max=x else: max=y               & While, for                    \\ \hline
-\end{tabular}
-\end{table*}
-
-
-\begin{table*}[H]
-\centering
-\caption{Explicit concurrency description of multi-paradigm programming laguaguages}
-\hline
-\label{my-label}
-\begin{tabular}{|l|l|l|l|l|l|l|}       \\ \hline
-Explicit concurrency & Concurrency Unit & Stream Concurrency & Message passing            & Shared state     & Code locking &                 \\ \hline
-Scala                & Yes              & SynchVar           & AKKA                       & Yes              & Actor        & Java library    \\ \hline
-Swift                & Yes              & nsthread           & nsstream                   & No               & No           & Lock.swift      \\ \hline
-Falcon               &                  & Yes                & Yes                        & No               & Yes          & -sync y         \\ \hline
-F\#                  & Yes              & LockObject         & Threading                  & MailBoxProcessor & No           & LockedCounter   \\ \hline
-Rust                 & Yes              & Arc, mutex         & Thread                     & yes              & rc           &                 \\ \hline
-Vb .Net              & yes              & thread             & threading                  & Thread pool      & pool         & Synclock        \\ \hline
-C\#                  & yes              & Parallel.for       & Threading                  & Concurrency::    & monitor      & Lock()          \\ \hline
-D                    & yes              & tid                & Std.oncurrency Core.thread & Std.oncurrency   & Shared()     & core.sync.mutex \\ \hline
-Oz                   & yes              & thread             & no                         & No               & No           & Lck p           \\ \hline
-Matlab               & no               & No                 & No                         & no               & no           & Lock, mutex     \\ \hline
-R                    & no               & no                 & no                         & No               & no           & Lock            \\ \hline
-Python               & Yes              & No                 & Threading                  & Mpi              & Thread pool  & Lock, semaphore \\ \hline
-\end{tabular}
-\end{table*}
-
-
-
-
-
-
-\section{Discussion and Analysis}
-Compiled/interpreted: Major advantage of compilation is the fast performance as it directly used the native code of the target machine and hence has the opportunity to apply quite powerful optimizations during the compile stage. Since the translation is done only once during the compilation, program only needs to be loaded and executed. Major advantage of interpreted is that ease of implementing logic especially for dynamic languages. Also there is no need to compile code and the programs can be executed directly. It is also easier to debug since programs can be executed side by side. Keeping this in mind, compiled languages shall be suitable for the intensive parts of an application requiring heavy resource usage whereas less intensive parts could be written in interpreted languages, e.g. interfaces, invoking the application, ad hoc requests or prototyping.
-Asserts are a useful debugging tool. They help detect errors that might otherwise go undetected, detect errors sooner after they occur and also ensure that the statement about the effects of the code is true. The disadvantage of using asserts is reporting an error where none exists and failing to report a bug that does exist. Asserts are also not side-effect free. They also consume extra time and memory to execute. Assert is different from exception handling as occurrence of the exception may go unnoticed while asserts ensure one gets aware of the bug. Asserts are sometimes referred to as lazy exception handling.
-Conclusion
-If the programmer has to choose between speed and ease of programming, then the choice has to be made between languages opting for compiled or interpreted. A language having the facility of asserts provide the programmers with the ease of detecting errors that would have been impossible to catch using regular exception handling.
-
-
-\section{Conclusions}
-This paper discusses in detail various aspects of multi-programming paradigms and correlates different features with the programming languages lying in this paradigm. It has been concluded that multi-programming paradigm offers features from a broad spectrum making them more flexible, usable and applicable to diverse set of applications. This is also the reason for their increased popularity among the software community as programmers do not have to learn, shift or integrate works from different languages and get all the services from just one programming language belonging to the multi-programming paradigm. This frees the programmer from choosing the paradigm, but now only choice has to be made for the language only. Multi-programming paradigm itself offers a huge range of languages to choose depending on the features available. Some of the features common to all are type safety, assertion, file-handling and exception handling. While there is a variation in the way programming languages bound checking, meta-programming, compiled/interpreted, immutability, imperative control and explicit concurrency. This work shall act as baseline for any future work done in enhancing the understanding of the how various features correlate in different programming languages lying in the multi-programming paradigm.
-
-\section{Future Work}
-One of the biggest limitations our study is that our study is not exhaustive. Neither the features included nor the languages chosen are comprehensive.
-
-%ACKNOWLEDGMENTS are optional
-\begin{thebibliography}{9}
-\bibitem @article{clarke2006historical,
-  title={A historical perspective on runtime assertion checking in software development},
-  author={Clarke, Lori A and Rosenblum, David S},
-  journal={ACM SIGSOFT Software Engineering Notes},
-  volume={31},
-  number={3},
-  pages={25--37},
-  year={2006},
-  publisher={ACM}
-}
-\bibitem @article{hoare2003assertions,
-  title={Assertions: A personal perspective},
-  author={Hoare, Charles Antony Richard},
-  journal={IEEE Annals of the History of Computing},
-  volume={25},
-  number={2},
-  pages={14--25},
-  year={2003},
-  publisher={IEEE}
-}
-\bibitem @article{kamp2012my,
-  title={My compiler does not understand me},
-  author={Kamp, Poul-Henning},
-  journal={Communications of the ACM},
-  volume={55},
-  number={7},
-  pages={51--53},
-  year={2012},
-  publisher={ACM}
-}
-\end{thebibliography}
+	\subsection{Mutable}
+	A mutable object, by contrast, has data fields that can be altered. One or more of its methods will change the contents of the object, or it has a Property that, when written into, will change the value of the object.
+	If you have a mutable object- the most similar one to String is StringBuffer inC\#- then you have to make a copy of it if you want to be absolutely sure it won't change out from under you. This is why mutable objects are dangerous to use as keys into any form of Dictionary or set- the objects themselves could change, and the data structure would have no way of knowing, leading to corrupt data that would, eventually, crash your program.
+	However, you can change its contents- so it's much, much more memory efficient than making a complete copy because you wanted to change a single character, or something similar.
+	Generally, the right thing to do is use mutable objects while you're creating something, and immutable objects once you're done. This applies to objects that have immutable forms, of course; most of the collections don't. It's often useful to provide read-only forms of collections, though, which is the equivalent of immutable, when sending the internal state of your collection to other contexts- otherwise, something could take that return value, do something to it, and corrupt your data
+	
+	
+	\begin{table}[]
+		\centering
+		\caption{Mutable programming features in different languages}
+		\label{my-label}
+		\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{2}{|c|}{Mutable}                     \\ \hline
+			Scala  & var maxValue = 100                         \\ \hline
+			Swift  & var (firstNumber, secondNumber) = (10, 42) \\ \hline
+			Falcon & array={[}1,2,3{]}                          \\ \hline
+			F\#    & let a = 1                                  \\ \hline
+			Rust   & let a = 1                                  \\ \hline
+			Vb.net & Dim num1  as Integer = 1                   \\ \hline
+			C\#    & float PI = 3.14149                         \\ \hline
+			D      & mutable int len = 1                        \\ \hline
+			Oz     & \{Browse \{4+2\} div 2\}                   \\ \hline
+			Matlab & h = 6.626068e-34;                          \\ \hline
+			R      & a\textless{}- 1                            \\ \hline
+			Python & var a = 1                                  \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection{imperative control}
+	
+	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if…else, switch statements and iteration statements like for, while, do etc.
+	\newline
+	In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we'll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C\# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
+	
+	
+	\subsection{Explicit concurrency}
+	
+	We say two activities are concurrent of they are executing in parallel or if they can be interleaved. The one which encapsulates a single concurrent activity, joining with a compulsory mutable state, is known as concurrency unit. Whether stream concurrency enables two or more concurrent activities to use each one end of stream. This could be thought as producer-consumer communication. In shared state, a shared data structure is modified by concurrent activities. Serialization or code locking ensures code segment to be executed only when permitted. In message passing concurrency, messages are exchanged among the concurrent activities. Message passing could be in synchronous (wait until receiving message) mode or asynchronous (not wait) mode or combination of the two modes. Message could be defined as data which is transferred among the activities. Order of message sending may not be important from the point of underlying platform.
+	\newline
+	All the above multi-paradigm programming languages have disjunctions in many features that are important in context of programming. Very popular language for message passing concurrency is F\# as it provides facility of MailBoxProcessor. Some that have good option to access feature of shared pool, are python and D. Although all the multi-paradigm languages provide facility of code locks, still python is best and also C\# and VB.Net as well. Matlab and R don't facilitate concurrency. These languages even don't provide any mechanism for message passing concurrency and don't include feature of stream concurrency. Table 9 describes comparison of imperative control structures among multi-paradigm programming languages. 
+	
+	\begin{table*}[]
+		\centering
+		\caption{Imperative control of multi-paradigm programming laguaguages}
+		
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			&Method/Procedure Parameters & Method/Proc Return & Control Statement & Iteration                                            &                               \hline
+			Scala           & By name or function pointer & Positional, by val                                                                  & If (x\textgreater{}y) \{max= x;\}    & While, do-while, for          \\ \hline
+			Swift                    & By name or function pointer & Positional, by val                          & If x\textgreater{}y \{max= x;\}      & For-in, while                 \\ \hline
+			Falcon                    & By name or function pointer & Positional, by val                                  & If x\textgreater{}y \{max= x;\}      & For, while                    \\ \hline
+			F\#                      & By name                     & By val, by ref                                  & If (x\textgreater{}y) then num1           & While…do, for…in/to/downto    \\ \hline
+			Rust                     & By name or function pointer & Positional, by val                       & If x\textgreater{}y \{max=x;\}   & Loop, while, for-in           \\ \hline
+			Vb .Net                          & By name or function pointer & By value, ref, name                                     & If x\textgreater{}y then x endif              & While…end, do-loop, \\ \hline
+			C\#              & By name or function pointer & By val, ref, name & If (x\textgreater{}y) \{ max=x; \} & While, do-while, for, foreach \\ \hline
+			D                          & By name or function pointer & Positional, by val                       & If (x\textgreater{}y) \{max=x;\}     & While, do-while, for          \\ \hline
+			Oz           & By name or function pointer & Positional, by val                                                                   & if x\textgreater{}y then x end                & For – do…end                  \\ \hline
+			Matlab                     & By name or function pointer & Positional, by val                                              & If (x\textgreater{}y) x end                   & While, for                    \\ \hline
+			R                          & By name or function pointer & Positional, by val                          & If (x\textgreater{}y)     & Repeat, While, for            \\ \hline
+			Python                     & By name or function pointer & Positional, by val                                                 & If x\textgreater{}y: max=x               & While, for                    \\ \hline
+		\end{tabular}
+	\end{table*}
+	
+	
+	\begin{table*}[]
+		\centering
+		\caption{Explicit concurrency of multi-paradigm programming laguaguages}
+		
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			&Conc. Unit & Stream Concurrency & Message passing            & Code locking &                \hline
+			Scala                     & SynchVar           & AKKA                             & Actor        & Java library    \\ \hline
+			Swift                & nsthread           & nsstream                   & \ding{54}               & Lock.swift      \\ \hline
+			Falcon                      & \ding{52}                & \ding{52}                        & \ding{52}          & -sync y         \\ \hline
+			F\#                             & LockObject         & Threading                  & \ding{54}          & LockedCounter   \\ \hline
+			Rust                & Arc, mutex         & Thread        & rc           &                 \\ \hline
+			Vb .Net            & thread             & threading                  & Thread pool      & Synclock        \\ \hline
+			C\#                       & Parallel.for       & Threading               & monitor      & Lock()          \\ \hline
+			D                & tid                & Std.concurrency & Shared()     & core.sync.mutex \\ \hline
+			Oz                & thread                           & \ding{54}                 & Lck p  &\ding{54}        \\ \hline
+			Matlab              & \ding{54}                               & \ding{54}              & \ding{54}          & Lock, mutex     \\ \hline
+			R               & \ding{54}                                    & \ding{54}              & \ding{54}          & Lock            \\ \hline
+			Python                       & \ding{54}                & Threading                          & Thread pool  & Lock, semaphore \\ \hline
+		\end{tabular}
+	\end{table*}
+	
+	
+	
+	
+	
+	
+	\section{Discussion and Analysis}
+	Compiled/interpreted: Major advantage of compilation is the fast performance as it directly used the native code of the target machine and hence has the opportunity to apply quite powerful optimizations during the compile stage. Since the translation is done only once during the compilation, program only needs to be loaded and executed. Major advantage of interpreted is that ease of implementing logic especially for dynamic languages. Also there is no need to compile code and the programs can be executed directly. It is also easier to debug since programs can be executed side by side. Keeping this in mind, compiled languages shall be suitable for the intensive parts of an application requiring heavy resource usage whereas less intensive parts could be written in interpreted languages, e.g. interfaces, invoking the application, ad hoc requests or prototyping.
+	Asserts are a useful debugging tool. They help detect errors that might otherwise go undetected, detect errors sooner after they occur and also ensure that the statement about the effects of the code is true. The disadvantage of using asserts is reporting an error where none exists and failing to report a bug that does exist. Asserts are also not side-effect free. They also consume extra time and memory to execute. Assert is different from exception handling as occurrence of the exception may go unnoticed while asserts ensure one gets aware of the bug. Asserts are sometimes referred to as lazy exception handling.
+	Conclusion
+	If the programmer has to choose between speed and ease of programming, then the choice has to be made between languages opting for compiled or interpreted. A language having the facility of asserts provide the programmers with the ease of detecting errors that would have been impossible to catch using regular exception handling.
+	
+	Type safety \\ 
+	
+	Type safety helps programmer for the minimizing type errors occurs at run time. The programmer first assign types which is called binding. Binding can either be explicit or implicit. In explicit type binding, programmer specifically declare it type while implicit in type binding, compiler infer it's type by type inference method built in some languages tools.\\
+	
+	Some languages are strongly type, while some languages are weakly type. Strongly type languages guarantees that accepted programs are type safe.\\
+	
+	Weakly typed languages allow programs that contain type errors. Static type checking are efficient while dynamic checks slow down the programs. \\
+	
+	Bound checking\\
+	
+	The strongly type languages guarantee type-safe execution by bound checking of array access. Array-bound check or index checking may give exceptions.
+	Some researchers are eliminating bound checks as these checks slow the execution process. Some languages has options to disable bound check while some programmer optimized their code by eliminating bound checking.\\
+	
+	
+	\section{Conclusions}
+	This paper discusses in detail various aspects of multi-programming paradigms and correlates different features with the programming languages lying in this paradigm. It has been concluded that multi-programming paradigm offers features from a broad spectrum making them more flexible, usable and applicable to diverse set of applications. This is also the reason for their increased popularity among the software community as programmers do not have to learn, shift or integrate works from different languages and get all the services from just one programming language belonging to the multi-programming paradigm. This frees the programmer from choosing the paradigm, but now only choice has to be made for the language only. Multi-programming paradigm itself offers a huge range of languages to choose depending on the features available. Some of the features common to all are type safety, assertion, file-handling and exception handling. While there is a variation in the way programming languages bound checking, meta-programming, compiled/interpreted, immutability, imperative control and explicit concurrency. This work shall act as baseline for any future work done in enhancing the understanding of the how various features correlate in different programming languages lying in the multi-programming paradigm.
+	
+	\section{Future Work}
+	One of the biggest limitations our study is that our study is not exhaustive. Neither the features included nor the languages chosen are comprehensive.
+	
+	%ACKNOWLEDGMENTS are optional
+	\begin{thebibliography}{9}
+		\bibitem @article{clarke2006historical,
+			title={A historical perspective on runtime assertion checking in software development},
+			author={Clarke, Lori A and Rosenblum, David S},
+			journal={ACM SIGSOFT Software Engineering Notes},
+			volume={31},
+			number={3},
+			pages={25--37},
+			year={2006},
+			publisher={ACM}
+		}
+		\bibitem @article{hoare2003assertions,
+			title={Assertions: A personal perspective},
+			author={Hoare, Charles Antony Richard},
+			journal={IEEE Annals of the History of Computing},
+			volume={25},
+			number={2},
+			pages={14--25},
+			year={2003},
+			publisher={IEEE}
+		}
+		\bibitem @article{kamp2012my,
+			title={My compiler does not understand me},
+			author={Kamp, Poul-Henning},
+			journal={Communications of the ACM},
+			volume={55},
+			number={7},
+			pages={51--53},
+			year={2012},
+			publisher={ACM}
+		}
+		\bibitem @article{lr1,
+			title={Overview of the four main programming paradigms},
+			author={Nørmark, Kurt},
+			year={2012},
+			publisher={Aalborg University}
+		}
+		\bibitem @article{lr2,
+			title={Multi-Paradigm Programming Language},
+			year={2013},
+			publisher={developer.mozilla.org}
+		}
+		\bibitem @article{lr3,
+			title={Comparative Programming Languages},
+			author={Robert G. Clark},
+			year={2000},
+		}
+		\bibitem @article{lr4,
+			title={Multi-paradigm Declarative Languages},
+			author={Michael Hanus},
+			year={2007},
+			publisher={Springer}
+		}
+		\bibitem @article{lr5,
+			title={A Comparative Study of Language Support for Generic Programming},
+			author={Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock},
+			year={2003},
+			publisher={ResearchGate}
+		}
+		\bibitem @inproceedings{Bruce:1993:STC:158511.158650,
+			author = {Bruce, Kim B.},
+			title = {Safe Type Checking in a Statically-typed Object-oriented Programming Language},
+			booktitle = {Proceedings of the 20th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+			series = {POPL '93},
+			year = {1993},
+			isbn = {0-89791-560-7},
+			location = {Charleston, South Carolina, USA},
+			pages = {285--298},
+			numpages = {14},
+			url = {http://doi.acm.org/10.1145/158511.158650},
+			doi = {10.1145/158511.158650},
+			acmid = {158650},
+			publisher = {ACM},
+			address = {New York, NY, USA},
+			
+			\bibitem @article{Bodik:2000:AEA:358438.349342, Bod\'{\i}k, Rastislav and Gupta, Rajiv and Sarkar, Vivek,
+				title = {ABCD: Eliminating Array Bounds Checks on Demand},
+				v. 35, 321-333, May,2000,
+				pages = {},
+				numpages = {13},
+				url = {http://doi.acm.org/10.1145/358438.349342},
+				doi = {10.1145/358438.349342},
+				acmid = {349342},
+				publisher = {ACM},
+				address = {New York, NY, USA},
+				
+				\bibitem @Antoy, Sergio and Hanus, Michael.:
+				Declarative Programming with Function Patterns. in
+				Logic Based Program Synthesis and Transformation,
+				6-22 (2006)
+			}
+			
+			
+			\bibitem @Antoy, S.: Evaluation Strategies for Functional Logic Programming. Journal of Symbolic Computation 40(1), 875–903 (2005)
+		}
+		
+		
+		
+		\bibitem @Sen, S., Moha, N., Baudry, B., Jézéquel, J.M.: Meta-model pruning. In: Proceedings of the 12th International Conference on Model Driven Engineering Languages and Systems (Models), pp. 32–46. Springer, Berlin (2009)
+		
+		
+		\bibitem @Syriani, E.: A multi-paradigm foundation for model transformation language engineering. Ph.D. thesis, McGill University (2011)
+		
+		
+		
+		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
+		
+		
+		\bibitem @ T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013)
+		
+		
+		\bibitem @Günther, S., Cleenewerck, T.: Design principles for internal domain-specific languages: a pattern catalog illustrated by Ruby. In: Proceedings of the 17th International Conference on Pattern Languages of Programs (PLoP'10) (2010)
+		
+		
+		
+		\bibitem @George, L., Wider, A., Scheidgen, M.: Type-safe model transformation languages as internal DSLs in scala. In: Proceedings of the 5th International Conference on Theory and Practice of Model Transformations (ICMT'12), pp. 160–175. (2012)
+		
+		
+		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
+		
+		
+		\bibitem @T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013).
+		
+		
+		\bibitem @K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic, "An experiment in measuring the productivity of three parallel programming languages", Proceedings of the Third Workshop on Productivity and Performance in High-End Computing ser. P-PHEC ' '06, pp. 30-37, 2006.
+		
+		\bibitem @C. Ghezzi, M. Jazayeri, Programming language concepts, Wiley & Sons, (1997).
+		
+		\bibitem @ 
+		L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz, "Parallel programmer productivity: A case study of novice parallel programmers", Proceedings of the 2005 ACM/IEEE Conference on Supercomputing ser. SC ' '05, pp. 35-43, (2005).
+		
+		
+		\bibitem @S. Nanz, S. West, K. Soares da Silveira, "Examining the expert gap in parallel programming", Proceedings of the 19th European Conference on Parallel Processing (Euro-Par ' '13) ser. Lecture Notes in Computer Science, vol. 8097, pp. 434-445, (2013).
+		
+		
+		\bibitem @V. Pankratius, F. Schmidt, G. Garretón, "Combining functional and imperative programming for multicore software: An empirical study evaluating Scala and Java", Proceedings of the 2012 International Conference on Software Engineering ser. ICSE ' '12, pp. 123-133, (2012).
+		
+		
+		\bibitem @L. Prechelt, "An empirical comparison of seven programming languages", IEEE Computer, vol. 33, no. 10, pp. 23-29, Oct. (2000).
+		
+		
+		
+	\end{thebibliography}
 \end{document}
