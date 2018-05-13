@@ -278,12 +278,11 @@
 			C\#                                               & \begin{tabular}[c]{@{}l@{}}throw excep\\ tion;\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   & \begin{tabular}[c]{@{}l@{}}Debug.Ass\\ ert(condi\\ tion);\end{tabular}                     \\ \hline
 			D                                                 & throw                                                             & \begin{tabular}[c]{@{}l@{}}try \{ instructions \}\\ catch (exception) \\ \{ instructions\}\\ finally \{instructions\}\end{tabular}                                                                                   &                                                                                            \\ \hline
 			Oz                                                & \begin{tabular}[c]{@{}l@{}}\{exception.\\ 'raise'X\}\end{tabular} & \begin{tabular}[c]{@{}l@{}}try S catch \\   Pattern\_1 then S1 \\   Pattern\_2 then S2 \\  finally \\    S\_final \\  end\end{tabular}                                                                               &                                                                                            \\ \hline
-			\begin{tabular}[c]{@{}l@{}}Mat\\ lab\end{tabular} & \begin{tabular}[c]{@{}l@{}}throw(excep\\ tion)\end{tabular}       & \begin{tabular}[c]{@{}l@{}}try\\ tab statements\\ catch exception\\ tab statements\\  end\end{tabular}                                                                                                               & \begin{tabular}[c]{@{}l@{}}assertError\\ (assert\\ able,actual,\\ identifier)\end{tabular} \\ \hline
+			
 			R                                                 & throw()                                                           & \begin{tabular}[c]{@{}l@{}}tryCatch(\{\\       expr\},\\  war=function(w)\{\\  warning-handler-\\ code\},\\  error = function(e)\\  \{error-handler-\\ code\}, finally = \{\\       cleanup-code\\   \}\end{tabular} & \begin{tabular}[c]{@{}l@{}}assertError\\ (expr,verbo\\ se=FALSE)\end{tabular}              \\ \hline
 			\begin{tabular}[c]{@{}l@{}}Pyth\\ on\end{tabular} & \begin{tabular}[c]{@{}l@{}}raise excep\\ tion\end{tabular}        & \begin{tabular}[c]{@{}l@{}}try:\\   Tab instructions\\   except exception:\\   Tab instructions\\   else:\\   Tab instructions\\   finally:\\   Tab  instruction\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}assert cond\\ ition\end{tabular}                                \\ \hline
 		\end{tabular}
-		\caption{Exception Handling syntax in different languages  }
-		\label{my-label}
+		
 	\end{table}
 	\subsection{Meta-programming}
 	Meta-programming is the capability to adapt itself (meta stack overflow which is the place to ask question about stack overflow itself). We can also say the ability to treat programs as their data. It means that a program can be designed to read, generate, analyze or transform other programs, and even modify itself while running. Meta-programming is not one specific technique, but rather an ensemble of concepts and techniques. There are two different ways of doing metaprogramming: on the Syntax level and at Runtime.\\
@@ -295,6 +294,8 @@
 	\textbf{Reflection:} is the ability of a computer program to examine, introspect, and modify its own structure and behavior at runtime.
 	\begin{table}[]
 		\centering
+		\caption{Meta Programming table}
+		
 		\begin{tabular}{|l|l|l|l|l|}
 			\hline
 			\begin{tabular}[c]{@{}l@{}}Prog. \\ Lang.\end{tabular} & \multicolumn{2}{l|}{Ways of Doing}                                                                          & \begin{tabular}[c]{@{}l@{}}Features\\ for compile\\ time\end{tabular} & \begin{tabular}[c]{@{}l@{}}Features\\ for Run\\ Time\end{tabular} \\ 
@@ -314,7 +315,7 @@
 			Matlab                                                 & x                                                      & x                                                  &                                                                       &                                                                   \\ \hline
 			Python                                                 &                                                        & \Checkmark                                                  &                                                                       & \begin{tabular}[c]{@{}l@{}}meta-\\ classes\end{tabular}           \\ \hline
 		\end{tabular}
-		\label{my-label}
+		
 	\end{table}
 	
 	\subsection{Compiled / interpreted}
@@ -383,7 +384,7 @@
 	\textbf{F\#}     & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}.NET debugger\\   System. Diagnostic.\\  Debug. Assert\end{tabular} & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
 	\textbf{Rust}    & \ding{54}                                                                           & \ding{52}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}debug\_assert!\\   interpreter\end{tabular}                         & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Vb .Net} & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}VBasic .Net \\ Debugger\end{tabular}                                & \ding{52}                                                                                                                                \\ \hline
-	\textbf{C\#}     & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NETâ€™s Base \\ Class Library (BCL) \\ supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                     & C\# debugger                                                                                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
+	\textbf{C\#}     & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NET’s Base \\ Class Library (BCL) \\ supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                     & C\# debugger                                                                                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
 	\textbf{D}       & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Oz}      & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Matlab}  & \begin{tabular}[c]{@{}l@{}}fatalAssertThat\\   fataAssertWarning\end{tabular} & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   global NDEBUG;\\  NDEBUG=true;\end{tabular}                                                                                                          & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   matlab\end{tabular}                                         & \ding{54}                                                                                                                                \\ \hline
@@ -411,7 +412,7 @@
 			Falcon  &                                                                                                                                                              \\ \hline
 			F\#     &                                                                                                                                                              \\ \hline
 			Rust    & \begin{tabular}[c]{@{}l@{}}\#\{{[}\}cfg\{{]}\}\\ for example \#\{{[}\}cfg(foo)\{{]}\}\end{tabular}                                                           \\ \hline
-			Vb .net & \#ifÂ…thenÂ…\#else                                                                                                                                             \\ \hline
+			Vb .net & \#if?then?\#else                                                                                                                                             \\ \hline
 			C\#     & \#if                                                                                                                                                         \\ \hline
 			D       & \begin{tabular}[c]{@{}l@{}}debug \{    // ... conditionally \\ compiled code ... \} else \{    // ... code \\ that is compiled otherwise ... \}\end{tabular} \\ \hline
 			Oz      &                                                                                                                                                              \\ \hline
@@ -452,7 +453,7 @@
 	
 	\subsection{imperative control}
 	
-	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like ifâ€¦else, switch statements and iteration statements like for, while, do etc.
+	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if…else, switch statements and iteration statements like for, while, do etc.
 	\newline
 	In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we'll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C\# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
 	
@@ -473,12 +474,12 @@
 			Scala           & By name or function pointer & Positional, by val                                                                  & If (x\textgreater{}y) \{max= x;\}    & While, do-while, for          \\ \hline
 			Swift                    & By name or function pointer & Positional, by val                          & If x\textgreater{}y \{max= x;\}      & For-in, while                 \\ \hline
 			Falcon                    & By name or function pointer & Positional, by val                                  & If x\textgreater{}y \{max= x;\}      & For, while                    \\ \hline
-			F\#                      & By name                     & By val, by ref                                  & If (x\textgreater{}y) then num1           & Whileâ€¦do, forâ€¦in/to/downto    \\ \hline
+			F\#                      & By name                     & By val, by ref                                  & If (x\textgreater{}y) then num1           & While…do, for…in/to/downto    \\ \hline
 			Rust                     & By name or function pointer & Positional, by val                       & If x\textgreater{}y \{max=x;\}   & Loop, while, for-in           \\ \hline
-			Vb .Net                          & By name or function pointer & By value, ref, name                                     & If x\textgreater{}y then x endif              & Whileâ€¦end, do-loop, \\ \hline
+			Vb .Net                          & By name or function pointer & By value, ref, name                                     & If x\textgreater{}y then x endif              & While…end, do-loop, \\ \hline
 			C\#              & By name or function pointer & By val, ref, name & If (x\textgreater{}y) \{ max=x; \} & While, do-while, for, foreach \\ \hline
 			D                          & By name or function pointer & Positional, by val                       & If (x\textgreater{}y) \{max=x;\}     & While, do-while, for          \\ \hline
-			Oz           & By name or function pointer & Positional, by val                                                                   & if x\textgreater{}y then x end                & For â€“ doâ€¦end                  \\ \hline
+			Oz           & By name or function pointer & Positional, by val                                                                   & if x\textgreater{}y then x end                & For – do…end                  \\ \hline
 			Matlab                     & By name or function pointer & Positional, by val                                              & If (x\textgreater{}y) x end                   & While, for                    \\ \hline
 			R                          & By name or function pointer & Positional, by val                          & If (x\textgreater{}y)     & Repeat, While, for            \\ \hline
 			Python                     & By name or function pointer & Positional, by val                                                 & If x\textgreater{}y: max=x               & While, for                    \\ \hline
@@ -573,7 +574,7 @@
 		}
 		\bibitem @article{lr1,
 			title={Overview of the four main programming paradigms},
-			author={NÃ¸rmark, Kurt},
+			author={Nørmark, Kurt},
 			year={2012},
 			publisher={Aalborg University}
 		}
@@ -633,12 +634,12 @@
 			}
 			
 			
-			\bibitem @Antoy, S.: Evaluation Strategies for Functional Logic Programming. Journal of Symbolic Computation 40(1), 875â€“903 (2005)
+			\bibitem @Antoy, S.: Evaluation Strategies for Functional Logic Programming. Journal of Symbolic Computation 40(1), 875–903 (2005)
 		}
 		
 		
 		
-		\bibitem @Sen, S., Moha, N., Baudry, B., JÃ©zÃ©quel, J.M.: Meta-model pruning. In: Proceedings of the 12th International Conference on Model Driven Engineering Languages and Systems (Models), pp. 32â€“46. Springer, Berlin (2009)
+		\bibitem @Sen, S., Moha, N., Baudry, B., Jézéquel, J.M.: Meta-model pruning. In: Proceedings of the 12th International Conference on Model Driven Engineering Languages and Systems (Models), pp. 32–46. Springer, Berlin (2009)
 		
 		
 		\bibitem @Syriani, E.: A multi-paradigm foundation for model transformation language engineering. Ph.D. thesis, McGill University (2011)
@@ -648,20 +649,20 @@
 		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
 		
 		
-		\bibitem @ T. E. BissyandÃ©, F. Thung, D. Lo, L. Jiang, L. RÃ©veillÃ¨re, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013)
+		\bibitem @ T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013)
 		
 		
-		\bibitem @GÃ¼nther, S., Cleenewerck, T.: Design principles for internal domain-specific languages: a pattern catalog illustrated by Ruby. In: Proceedings of the 17th International Conference on Pattern Languages of Programs (PLoP'10) (2010)
+		\bibitem @Günther, S., Cleenewerck, T.: Design principles for internal domain-specific languages: a pattern catalog illustrated by Ruby. In: Proceedings of the 17th International Conference on Pattern Languages of Programs (PLoP'10) (2010)
 		
 		
 		
-		\bibitem @George, L., Wider, A., Scheidgen, M.: Type-safe model transformation languages as internal DSLs in scala. In: Proceedings of the 5th International Conference on Theory and Practice of Model Transformations (ICMT'12), pp. 160â€“175. (2012)
+		\bibitem @George, L., Wider, A., Scheidgen, M.: Type-safe model transformation languages as internal DSLs in scala. In: Proceedings of the 5th International Conference on Theory and Practice of Model Transformations (ICMT'12), pp. 160–175. (2012)
 		
 		
 		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
 		
 		
-		\bibitem @T. E. BissyandÃ©, F. Thung, D. Lo, L. Jiang, L. RÃ©veillÃ¨re, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013).
+		\bibitem @T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013).
 		
 		
 		\bibitem @K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic, "An experiment in measuring the productivity of three parallel programming languages", Proceedings of the Third Workshop on Productivity and Performance in High-End Computing ser. P-PHEC ' '06, pp. 30-37, 2006.
@@ -675,7 +676,7 @@
 		\bibitem @S. Nanz, S. West, K. Soares da Silveira, "Examining the expert gap in parallel programming", Proceedings of the 19th European Conference on Parallel Processing (Euro-Par ' '13) ser. Lecture Notes in Computer Science, vol. 8097, pp. 434-445, (2013).
 		
 		
-		\bibitem @V. Pankratius, F. Schmidt, G. GarretÃ³n, "Combining functional and imperative programming for multicore software: An empirical study evaluating Scala and Java", Proceedings of the 2012 International Conference on Software Engineering ser. ICSE ' '12, pp. 123-133, (2012).
+		\bibitem @V. Pankratius, F. Schmidt, G. Garretón, "Combining functional and imperative programming for multicore software: An empirical study evaluating Scala and Java", Proceedings of the 2012 International Conference on Software Engineering ser. ICSE ' '12, pp. 123-133, (2012).
 		
 		
 		\bibitem @L. Prechelt, "An empirical comparison of seven programming languages", IEEE Computer, vol. 33, no. 10, pp. 23-29, Oct. (2000).
