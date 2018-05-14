@@ -1,4 +1,132 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sig-alternate.aux
-I found no \bibdata command---while reading file sig-alternate.aux
-I found no \bibstyle command---while reading file sig-alternate.aux
-(There were 2 error messages)
+The style file: plain.bst
+Database file #1: sigproc.bib
+"'" immediately follows a field name---line 87 of file sigproc.bib
+ : @article{Bodik:2000:AEA:358438.349342, Bod\
+ :                                            '{\i}k, Rastislav and Gupta, Rajiv and Sarkar, Vivek,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 96 of file sigproc.bib
+ :     
+ :     author = {Antoy, Sergio and Hanus, Michael.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 177 of file sigproc.bib
+ :     
+ :     journal = {Proceedings of the 2005 ACM/IEEE Conference on Supercomputing ser. SC},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 185 of file sigproc.bib
+ :     
+ :     title = {Examining the expert gap in parallel programming},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock" for entry lr5
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock" for entry lr5
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in lr2
+Warning--to sort, need author or key in WinNT
+Warning--to sort, need author or key in Bodik:2000:AEA:358438.349342
+Warning--to sort, need author or key in antov.
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1049 of file plain.bst
+Name 1 in "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," has a comma at the end for entry thung
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," for entry thung
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," for entry thung
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ganther, S., Cleenewerck, T." for entry ganther
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic" for entry sarkar
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1049 of file plain.bst
+Name 1 in "V. Pankratius, F. Schmidt, G. Garretn," has a comma at the end for entry pank
+while executing---line 1049 of file plain.bst
+Warning--empty author in Bodik:2000:AEA:358438.349342
+Warning--empty title in Bodik:2000:AEA:358438.349342
+Warning--empty journal in Bodik:2000:AEA:358438.349342
+Warning--empty year in Bodik:2000:AEA:358438.349342
+Warning--empty author in antov.
+Warning--empty title in antov.
+Warning--empty journal in antov.
+Warning--empty year in antov.
+Warning--empty author in WinNT
+Warning--empty journal in WinNT
+Warning--empty year in WinNT
+Warning--empty author in lr2
+Warning--empty journal in lr2
+Warning--empty journal in ghezzi
+Warning--empty journal in lr3
+Warning--empty journal in Frans2012
+Too many commas in name 1 of "Ganther, S., Cleenewerck, T." for entry ganther
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "George, L., Wider, A., Scheidgen, M." for entry wider
+while executing---line 1090 of file plain.bst
+Warning--empty journal in lr4
+Too many commas in name 1 of "K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic" for entry sarkar
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz" for entry hoch
+while executing---line 1090 of file plain.bst
+Warning--empty journal in hoch
+Warning--empty year in hoch
+Warning--empty journal in lr1
+Too many commas in name 1 of "Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock" for entry lr5
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock" for entry lr5
+while executing---line 1090 of file plain.bst
+Warning--empty journal in lr5
+Warning--empty title in nanz
+Warning--empty journal in nanz
+Warning--empty year in nanz
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sen, S., Moha, N., Baudry, B., J�z�quel, J.M." for entry SenS
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Syriani
+Name 1 in "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," has a comma at the end for entry thung
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," for entry thung
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "T. E. Bissyand, F. Thung, D. Lo, L. Jiang, L. Roeillre," for entry thung
+while executing---line 1090 of file plain.bst
+Name 1 in "V. Pankratius, F. Schmidt, G. Garretn," has a comma at the end for entry pank
+while executing---line 1090 of file plain.bst
+(There were 44 error messages)

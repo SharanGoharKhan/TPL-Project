@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  14 MAY 2018 01:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  14 MAY 2018 13:27
 entering extended mode
 **./sig-alternate.tex
 (sig-alternate.tex
@@ -329,88 +329,7 @@ LaTeX Warning: Label `my-label' multiply defined.
 LaTeX Warning: Label `my-label' multiply defined.
 
 
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
-
-
-LaTeX Warning: Label `@' multiply defined.
+LaTeX Warning: Label `my-label' multiply defined.
 
 )
 \openout1 = `sig-alternate.aux'.
@@ -494,14 +413,18 @@ Overfull \hbox (21.92953pt too wide) in paragraph at lines 143--144
 \T1/aer/m/n/9 theory of pro-gram-ming lan-guages, multi-programming paradigms,
  []
 
+<langVSparadigm.png, id=146, 992.0262pt x 525.6438pt>
+File: langVSparadigm.png Graphic file (type png)
+<use langVSparadigm.png>
+Package pdftex.def Info: langVSparadigm.png  used on input line 149.
+(pdftex.def)             Requested size: 240.0pt x 127.1677pt.
 
-LaTeX Warning: Citation `kurt2012' on page \thepage  undefined on input line 146.
-
-
-LaTeX Warning: Citation `Frans2012' on page \thepage  undefined on input line 146.
+Overfull \hbox (3.73177pt too wide) in paragraph at lines 146--153
+\T1/aer/m/n/9 For ex-am-ple, lan-guages that fall into the im-per-a-tive paradigm
+ []
 
 ! Misplaced alignment tab character &.
-l.149 ...ction 3 followed by detailed discussion &
+l.155 ...ction 3 followed by detailed discussion &
                                                    analysis in section 4. We...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -511,12 +434,12 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (3.73177pt too wide) in paragraph at lines 146--150
-\T1/aer/m/n/9 For ex-am-ple, lan-guages that fall into the im-per-a-tive paradigm
+Overfull \hbox (10.68164pt too wide) in paragraph at lines 154--156
+\T1/aer/m/n/9 We have short-listed the fol-low-ing multi-programming paradigm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
@@ -529,149 +452,161 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 163.
-
-
-LaTeX Warning: Citation `WinNT' on page \thepage  undefined on input line 206.
-
-
-Overfull \hbox (19.70819pt too wide) in paragraph at lines 206--208
-\T1/aer/m/n/9 https://www.safaribooksonline.com/library/view/programming-
- []
+               Default added (so using `tbp') on input line 169.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 	
-        [2]
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+l.207 	\subsubsection
+                     {Swift} [2 <./langVSparadigm.png>]
+Overfull \hbox (19.70819pt too wide) in paragraph at lines 212--214
+\T1/aer/m/n/9 https://www.safaribooksonline.com/library/view/programming-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--220
+Underfull \hbox (badness 10000) in paragraph at lines 222--226
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 232.
+               Default added (so using `tbp') on input line 238.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 254.
+               Default added (so using `tbp') on input line 260.
 
 
-Overfull \hbox (5.02962pt too wide) in paragraph at lines 257--273
+Overfull \hbox (5.02962pt too wide) in paragraph at lines 263--279
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 73.45488pt on input line 274.
+LaTeX Warning: Float too large for page by 73.45488pt on input line 280.
 
 
-Overfull \hbox (2.23067pt too wide) in paragraph at lines 276--277
+Overfull \hbox (2.23067pt too wide) in paragraph at lines 282--283
 []\T1/aer/m/n/9 Meta-programming is the ca-pa-bil-ity to adapt it-self whereas
  []
 
 
-Overfull \hbox (2.66298pt too wide) in paragraph at lines 279--280
+Overfull \hbox (2.66298pt too wide) in paragraph at lines 285--286
 \T1/aer/m/n/9 guages through which Run-time meta-programming ap-
  []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 282.
-
-LaTeX Font Info:    Try loading font information for U+ding on input line 292.
-("C:\MiKTeX 2.9\tex\latex\bbding\uding.fd"
-File: Uding.fd 1996/02/01 v1.0 BBding font definitions
-)
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 311.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.332 	
-        [3]
+l.286 	\end{itemize}
+                     [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 336.
+               Default added (so using `tbp') on input line 288.
+
+LaTeX Font Info:    Try loading font information for U+ding on input line 298.
+("C:\MiKTeX 2.9\tex\latex\bbding\uding.fd"
+File: Uding.fd 1996/02/01 v1.0 BBding font definitions
+)
+<compiledInterpreted.png, id=189, 953.0004pt x 525.6438pt>
+File: compiledInterpreted.png Graphic file (type png)
+<use compiledInterpreted.png>
+Package pdftex.def Info: compiledInterpreted.png  used on input line 318.
+(pdftex.def)             Requested size: 240.0pt x 132.37311pt.
 
 
-Overfull \hbox (25.05664pt too wide) in paragraph at lines 340--357
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 323.
+
+<assert.png, id=191, 992.0262pt x 525.6438pt>
+File: assert.png Graphic file (type png)
+<use assert.png>
+Package pdftex.def Info: assert.png  used on input line 349.
+(pdftex.def)             Requested size: 240.0pt x 127.1677pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 
+       [4]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.353 
+       [5]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 354.
+
+
+Overfull \hbox (25.05664pt too wide) in paragraph at lines 358--375
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 361.
+               Default added (so using `tbp') on input line 379.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 404.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 428.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 458.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.385 	\subsection
-                  {File handling} [4]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been 
-already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.385 	\subsection
-                  {File handling} [5]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 390.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 416.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.443 	
-        [6]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.443 	
-        [7]
-Overfull \hbox (6.00809pt too wide) in paragraph at lines 447--449
+l.485 	
+        [6 <./compiledInterpreted.png> <./assert.png>]
+Overfull \hbox (6.00809pt too wide) in paragraph at lines 489--491
 \T1/aer/m/n/9 pul-sory mu-ta-ble state, is known as con-cur-rency unit. Whether
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--449
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 450.
+               Default added (so using `tbp') on input line 492.
 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.456 ...                                        &
+l.498 ...                                        &
                                                                             ...
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
+Overfull \hbox (5.39108pt too wide) in paragraph at lines 496--512
+ [][] 
+ []
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 473.
+               Default added (so using `tbp') on input line 515.
 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.479 ...ssage passing            & Code locking &
+l.521 ...ssage passing            & Code locking &
                                                                   \hline
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -680,236 +615,70 @@ So I'll assume that you meant to type \cr instead.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.505 	
+l.547 	
+        [7]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.547 	
         [8]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.505 	
+l.547 	
         [9]
-Overfull \hbox (4.38142pt too wide) in paragraph at lines 507--508
+Overfull \hbox (4.38142pt too wide) in paragraph at lines 549--550
 \T1/aer/m/n/9 programming paradigms and cor-re-lates dif-fer-ent fea-tures with
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+(sig-alternate.bblpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, dupli
+cate ignored
 <to be read again> 
                    \relax 
-l.602 			
-          [10pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate
- ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.602 			
-         ]pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.603 			\bibitem @
-                   article{Bodik:2000:AEA:358438.349342, Bod\'{\i}k, Rastisl...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.614 				\bibitem @
-                    Antoy, Sergio and Hanus, Michael.:pdfTeX warning (ext4): destination with the same identifier (name{
-cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.621 			\bibitem @
-                   Antoy, S.: Evaluation Strategies for Functional Logic Pro...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.626 		\bibitem @
-                  Sen, S., Moha, N., Baudry, B., Jézéquel, J.M.: Meta-model ...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.629 		\bibitem @
-                  Syriani, E.: A multi-paradigm foundation for model transfo...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.633 		\bibitem @
-                  P. Bhattacharya, I. Neamtiu, "Assessing programming langua...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.636 		\bibitem @
-                   T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.639 		\bibitem @
-                  Günther, S., Cleenewerck, T.: Design principles for intern...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.643 		\bibitem @
-                  George, L., Wider, A., Scheidgen, M.: Type-safe model tran...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.646 		\bibitem @
-                  P. Bhattacharya, I. Neamtiu, "Assessing programming langua...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.649 		\bibitem @
-                  T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère,...
+l.40 \bibitem{clarke2006historical}
+                                    [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.652 		\bibitem @
-                  K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic, "An exp...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.654 		\bibitem @
-                  C. Ghezzi, M. Jazayeri, Programming language concepts, Wil...
-! Misplaced alignment tab character &.
-l.654 ...i, Programming language concepts, Wiley &
-                                                   Sons, (1997).
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.656 		\bibitem @
-                  pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.660 		\bibitem @
-                  S. Nanz, S. West, K. Soares da Silveira, "Examining the ex...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.663 		\bibitem @
-                  V. Pankratius, F. Schmidt, G. Garretón, "Combining functio...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.666 		\bibitem @
-                  L. Prechelt, "An empirical comparison of seven programming...pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.@}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.667 		\bibitem @
-                  misc{WinNT,
-LaTeX Font Info:    Try loading font information for T1+aett on input line 669.
- (C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\ae\t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 673.
-
-Overfull \hbox (24.07365pt too wide) in paragraph at lines 667--673
-\T1/aer/m/n/9 how-pub-lished = []$\T1/aett/m/n/9 http : / / web . archive . org / web / 20080207010024 /
- []
-
-
-Overfull \hbox (3.73236pt too wide) in paragraph at lines 667--673
-\T1/aett/m/n/9 http : / / www . 808multimedia . com / winnt / kernel . htm$[]\T1/aer/m/n/9 , note =
- []
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.673 \end{document}
-                     [11pdfTeX warning (ext4): destination with the same identifier (name{cite.@}) has been already used
-, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.673 \end{document}
-                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 673.
+l.583 \end{document}
+                     [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
  (sig-alternate.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 673.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 673.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 583.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
 Package rerunfilecheck Info: File `sig-alternate.out' has not changed.
-(rerunfilecheck)             Checksum: 425E67511D8987E7D36E916E5EE8E107;2196.
+(rerunfilecheck)             Checksum: AD590143EE21C8789C2D20364747DE00;2196.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 673.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 583.
  ) 
 Here is how much of TeX's memory you used:
- 6639 strings out of 493305
- 94942 string characters out of 3131993
- 217223 words of memory out of 3000000
- 10029 multiletter control sequences out of 15000+200000
- 49505 words of font info for 69 fonts, out of 3000000 for 9000
+ 6695 strings out of 493305
+ 95563 string characters out of 3131993
+ 221321 words of memory out of 3000000
+ 10050 multiletter control sequences out of 15000+200000
+ 51500 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,29p,1383b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\user\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\bbding\dpi540\bbding10.pk>{C:/Users/user/AppData/Local
 /Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/user/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Us
-ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Us
-ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fon
-ts/type1/urw/times/utmri8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on sig-alternate.pdf (11 pages, 208707 bytes).
+ublic/amsfonts/cm/cmsy9.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Us
+ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmu10.pfb><C:/Users/user/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pf
+b><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/user/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:
+/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on sig-alternate.pdf (11 pages, 991343 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 

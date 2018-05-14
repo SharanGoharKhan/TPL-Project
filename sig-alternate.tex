@@ -144,7 +144,13 @@
 	
 	\section{Introduction}
 	Programming paradigms are a way to classify programming languages based on their features. Languages can be classified into multiple paradigms. Some paradigms are concerned mainly with implications for the execution model of the language, such as allowing side effects, or whether the sequence of operations is defined by the execution model. Other paradigms are concerned mainly with the way that code is organized, such as grouping a code into units along with the state that is modified by the code. Yet others are concerned mainly with the style of syntax and grammar. Common programming paradigms include imperative, declarative and symbolic. The former allows side effects with object-oriented which groups code together with the state the code modifies and procedural which groups code into functions. Declarative which does not state the order in which operations execute with functional which disallows side effects and logic which has a particular style of execution model coupled to a particular style of syntax and grammar. The latter has a particular style of syntax and grammar as mentioned by \cite{kurt2012,Frans2012}.\\
-For example, languages that fall into the imperative paradigm have two main features: they state the order in which operations occur, with constructs that explicitly control that order, and they allow side effects, in which state can be modified at one point in time, within one unit of code, and then later read at a different point in time inside a different unit of code. The communication between the units of code is not explicit. Meanwhile, in object-oriented programming, code is organized into objects that contain state that is only modified by the code that is part of the object. Most object-oriented languages are also imperative languages. In contrast, languages that fit the declarative paradigm do not state the order in which to execute operations. Instead, they supply a number of operations that are available in the system, along with the conditions under which each is allowed to execute. The implementation of the language's execution model tracks which operations are free to execute and chooses the order on its own. \\
+For example, languages that fall into the imperative paradigm have two main features: they state the order in which operations occur, with constructs that explicitly control that order, and they allow side effects, in which state can be modified at one point in time, within one unit of code, and then later read at a different point in time inside a different unit of code. The communication between the units of code is not explicit. Meanwhile, in object-oriented programming, code is organized into objects that contain state that is only modified by the code that is part of the object. Most object-oriented languages are also imperative languages. In contrast, languages that fit the declarative paradigm do not state the order in which to execute operations. Instead, they supply a number of operations that are available in the system, along with the conditions under which each is allowed to execute. The implementation of the language's execution model tracks which operations are free to execute and chooses the order on its own. Pictorial representation of language to paradigm mapping is shown in the figure \ref{fig:langVSpara}.\\
+\begin{figure}
+  \includegraphics[width=\linewidth]{langVSparadigm.png}
+  \caption{Programming Languages in perspective of Different Programming Paradigms}
+	\label{fig:langVSpara}
+\end{figure}
+
   Our work is a detailed study but not an exhaustive one. We have shortlisted the following multi-programming paradigm languages: Scala, Swift, Falcon, F\#, Rust, VB.net, C\#, Oz, Mozart, Matlab, R, and Python. Out of the comprehensive feature list we have focused our scope to the following only: Bound Checking, Type Safety, Exception Handling, Modularity, Compiled/Interpreted, Assertion, File Handling, Mutable, Immutable, Imperative Control and Explicit Concurrency. To the best of our knowledge, this is the first attempt to explore different features in depth and correlate them in their perspective of the above mentioned programming languages. The study revealed interesting patterns. While all languages support type safety, assertion, file-handling, exception handling, there is a variation in the behavior of the multi-paradigm programming languages when it comes to bound checking, meta-programming, compiled/interpreted, immutability, imperative control and explicit concurrency.\\
 	The paper is organized as follows. Section I introduces the concept of multi-programming paradigm and its various features while section 2 explains the literature review. All the features are discussed in detail in section 3 followed by detailed discussion & analysis in section 4. We finally conclude in section 5 and mention the future work in section 6.\\
 	
@@ -307,7 +313,13 @@ For example, languages that fall into the imperative paradigm have two main feat
 	
 	\subsection{Compiled / interpreted}
 	Compiled/interpreted: The difference lies not in the language but how the language has been implemented. A compiler translates the source code of the program into another language format that can be directly executed by a lower-level machine. This can be an abstract machine (such as .NET or the Java Virtual Machine) or the actual machine. In the latter case, the language format that is the target of the compiler is machine code. The translation from source code into lower-level code depends on the abstract syntax and on the operational semantics of the programming language. An interpreter executes the source code directly; informally, it may help to think of the interpreter as executing the program line by line. A more correct understanding is that the interpreter walks through the abstract syntax tree generated by the parser and executes each node in this tree. If a node is a leaf, the leaf is executed. If a node is an internal node, each sub-tree is visited and executed. Exactly how this is to be done depends on the abstract syntax and on the underlying semantics of the programming language.
-	Out of the many programming languages in this world, some of them are called compiled languages while some are interpreted. For compilation, the software uses is called compiler while for interpreter is used for interpreted language. For a compiled language, an interpreter can be built but the reverse is impossible. That is, all the interpreted languages cannot be a compiled language. Additionally, being interpreted or compiled is not the property of the programming languages, but the design of some languages make them unsuitable for native code generation.
+	Out of the many programming languages in this world, some of them are called compiled languages while some are interpreted. For compilation, the software uses is called compiler while for interpreter is used for interpreted language. For a compiled language, an interpreter can be built but the reverse is impossible. That is, all the interpreted languages cannot be a compiled language. Additionally, being interpreted or compiled is not the property of the programming languages, but the design of some languages make them unsuitable for native code generation. Figure \ref{fig:compiledInterpreted} gives the complete picture.\\
+\begin{figure}
+  \includegraphics[width=\linewidth]{compiledInterpreted.png}
+  \caption{Pictorial Representation of Programming Languages in perspective of Compiled and Interpreted Languages}
+	\label{fig:compiledInterpreted}
+\end{figure}
+
 	\begin{table*}[]
 		\centering
 		\caption{Compiled/interpreted]}
@@ -323,8 +335,8 @@ For example, languages that fall into the imperative paradigm have two main feat
 			\textbf{Vb .Net} & \begin{tabular}[c]{@{}l@{}}version 6 and above, \\ both compiled and interpreted\end{tabular}                                                                                                                                                                                                                                                                  & interpreted                                                                                                                       \\ \hline
 			\textbf{C\#}     & compiled                                                                                                                                                                                                                                                                                                                                                       &                                                                                                                                   \\ \hline
 			\textbf{D}       & compiled                                                                                                                                                                                                                                                                                                                                                       &                                                                                                                                   \\ \hline
-			\textbf{Oz}      & \begin{tabular}[c]{@{}l@{}}ding{52}, Oz code can be\\   compiled into command line\\  executables. The compiled \\ code is not native binary, \\ but a shell script-wrapper\\  with embedded Oz virtual\\  machine bytecode.\end{tabular}                                                                                                                           & ding{52}                                                                                                                               \\ \hline
-			\textbf{Matlab}  &                                                                                                                                                                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}ding{52},  you can\\   write code and just \\ execute it from the IDE,\\  without compilation.\end{tabular} \\ \hline
+			\textbf{Oz}      & \begin{tabular}[c]{@{}l@{}}ding{52}, Oz code can be\\   compiled into command line\\  executables. The compiled \\ code is not native binary, \\ but a shell script-wrapper\\  with embedded Oz virtual\\  machine bytecode.\end{tabular}                                                                                                                           &                                                                                                                                \\ \hline
+			\textbf{Matlab}  &                                                                                                                                                                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}},  you can\\   write code and just \\ execute it from the IDE,\\  without compilation.\end{tabular} \\ \hline
 			\textbf{R}       & \begin{tabular}[c]{@{}l@{}}an interface to compiled code,\\   because all key routines are run \\  in compiled code (through .C, \\ .Call., .Internal, .Primitive interfaces,\\  etc.) But does not compile\end{tabular}                                                                                                                                       & \ding{52}                                                                                                                               \\ \hline
 			\textbf{Python}  &                                                                                                                                                                                                                                                                                                                                                                & \ding{52}                                                                                                                               \\ \hline
 		\end{tabular}
@@ -332,7 +344,13 @@ For example, languages that fall into the imperative paradigm have two main feat
 	
 	
 	\subsection{Assertion}
-	Assertion: specifies that a program satisfies certain conditions at particular points in its execution. An assertion violation indicates a bug in the program. Thus, assertions are an effective means of improving the reliability of programs and function as a systematic debugging tool. There are three types of assertion: pre-conditions, post-conditions and invariants. Preconditions specify conditions at the start of a function; post-conditions specify conditions at the end of a function while invariants specify conditions over a defined region of a program. Asserts are to be used primarily for checking parameter types, classes, or values, checking data structure invariants, checking "can't happen" situations (duplicates in a list, contradictory state variables) or after calling a function, to make sure that its return is reasonable. However, asserts are not to be used for handling run-time errors, like entering a negative number when positive is needed. But used to catching the program errors.
+	Assertion: specifies that a program satisfies certain conditions at particular points in its execution. An assertion violation indicates a bug in the program. Thus, assertions are an effective means of improving the reliability of programs and function as a systematic debugging tool. There are three types of assertion: pre-conditions, post-conditions and invariants. Preconditions specify conditions at the start of a function; post-conditions specify conditions at the end of a function while invariants specify conditions over a defined region of a program. Asserts are to be used primarily for checking parameter types, classes, or values, checking data structure invariants, checking "can't happen" situations (duplicates in a list, contradictory state variables) or after calling a function, to make sure that its return is reasonable. However, asserts are not to be used for handling run-time errors, like entering a negative number when positive is needed. But used to catching the program errors. Figure \ref{fig:assert} gives the complete picture.\\
+\begin{figure}
+  \includegraphics[width=\linewidth]{assert.png}
+  \caption{Pictorial Representation of Programming Languages in perspective of Assertion}
+	\label{fig:assert}
+\end{figure}
+
 	\begin{table*}[]
 		\centering
 	\caption{Assertion - 1}
@@ -459,14 +477,14 @@ Python    & file\_object  = open(?filename?, ?mode?)                            
 		\end{tabular}
 	\end{table}
 	
-	\subsection{imperative control}
+	\subsection{Imperative Control}
 	
 	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if�else, switch statements and iteration statements like for, while, do etc.
 	\newline
 	In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we'll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C\# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
 	
 	
-	\subsection{Explicit concurrency}
+	\subsection{Explicit Concurrency}
 	
 	We say two activities are concurrent of they are executing in parallel or if they can be interleaved. The one which encapsulates a single concurrent activity, joining with a compulsory mutable state, is known as concurrency unit. Whether stream concurrency enables two or more concurrent activities to use each one end of stream. This could be thought as producer-consumer communication. In shared state, a shared data structure is modified by concurrent activities. Serialization or code locking ensures code segment to be executed only when permitted. In message passing concurrency, messages are exchanged among the concurrent activities. Message passing could be in synchronous (wait until receiving message) mode or asynchronous (not wait) mode or combination of the two modes. Message could be defined as data which is transferred among the activities. Order of message sending may not be important from the point of underlying platform.\\
 	All the above multi-paradigm programming languages have disjunctions in many features that are important in context of programming. Very popular language for message passing concurrency is F\# as it provides facility of MailBoxProcessor. Some that have good option to access feature of shared pool, are python and D. Although all the multi-paradigm languages provide facility of code locks, still python is best and also C\# and VB.Net. Matlab and R do not facilitate concurrency. These languages neither provide any mechanism for message passing concurrency nor include feature of stream concurrency. Table 9 describes comparison of imperative control structures among multi-paradigm programming languages. \\
@@ -545,15 +563,15 @@ Python    & file\_object  = open(?filename?, ?mode?)                            
 \bibliographystyle{plain}
 % This specifies the location of the file containing the bibliographic information.
 % It assumes you're using BibTeX (if not, why not?).
-\cleardoublepage % This is needed if the book class is used, to place the anchor in the correct page,
+%\cleardoublepage % This is needed if the book class is used, to place the anchor in the correct page,
                  % because the bibliography will start on its own page.
                  % Use \clearpage instead if the document class uses the "oneside" argument
-\phantomsection  % With hyperref package, enables hyperlinking from the table of contents to bibliography
+%\phantomsection  % With hyperref package, enables hyperlinking from the table of contents to bibliography
 % The following statement causes the title "References" to be used for the bibliography section:
-\renewcommand*{\bibname}{References}
+%\renewcommand*{\bibname}{References}
 
 % Add the References to the Table of Contents
-\addcontentsline{toc}{chapter}{\textbf{References}}
+%\addcontentsline{toc}{chapter}{\textbf{References}}
 
 \bibliography{sigproc}
 % Tip 5: You can create multiple .bib files to organize your references.
@@ -562,9 +580,4 @@ Python    & file\_object  = open(?filename?, ?mode?)                            
 % The following statement causes the specified references to be added to the bibliography% even if they were not
 % cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
 \nocite{*}
-
-
-
-
-
 \end{document}

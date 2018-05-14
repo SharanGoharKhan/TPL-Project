@@ -1,0 +1,148 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bodik:2000:AEA:358438.349342}
+
+
+\bibitem{antov.}
+
+
+\bibitem{WinNT}
+{MS Windows NT} kernel description.
+\newblock Accessed: 2010-09-30.
+
+\bibitem{lr2}
+Multi-paradigm programming language.
+\newblock 2013.
+
+\bibitem{AntovS}
+S.~Antoy.
+\newblock Evaluation strategies for functional logic programming.
+\newblock {\em Journal of Symbolic Computation}, pages 875--903, 2005.
+
+\bibitem{Bruce}
+Kim~B. Bruce.
+\newblock Safe type checking in a statically-typed object-oriented programming
+  language.
+\newblock In {\em Proceedings of the 20th ACM SIGPLAN-SIGACT Symposium on
+  Principles of Programming Languages}, pages 285--298, New York, NY, USA,
+  1993. ACM.
+
+\bibitem{ghezzi}
+M.~Jazayeri C.~Ghezzi.
+\newblock Programming language concepts.
+\newblock 1997.
+
+\bibitem{lr3}
+Robert~G. Clark.
+\newblock Comparative programming languages.
+\newblock 2000.
+
+\bibitem{clarke2006historical}
+Lori~A Clarke and David~S Rosenblum.
+\newblock A historical perspective on runtime assertion checking in software
+  development.
+\newblock {\em ACM SIGSOFT Software Engineering Notes}, 31(3):25--37, 2006.
+
+\bibitem{Frans2012}
+Frans Coenen.
+\newblock Characteristics of declarative programming languages.
+\newblock 2014.
+
+\bibitem{ganther}
+Cleenewerck~T. Ganther, S.
+\newblock design principles for internal domain-specific languages: a pattern
+  catalog illustrated by ruby.
+\newblock {\em n: Proceedings of the 17th International Conference on Pattern
+  Languages of Programs (PLoP'10)}, 2010.
+
+\bibitem{wider}
+Wider A. Scheidgen~M. George, L.
+\newblock Type-safe model transformation languages as internal dsls in scala.
+\newblock {\em In: Proceedings of the 5th International Conference on Theory
+  and Practice of Model Transformations (ICMT'12)}, 13:160--175, 2012.
+
+\bibitem{lr4}
+Michael Hanus.
+\newblock Multi-paradigm declarative languages.
+\newblock 2007.
+
+\bibitem{hoare2003assertions}
+Charles Antony~Richard Hoare.
+\newblock Assertions: A personal perspective.
+\newblock {\em IEEE Annals of the History of Computing}, 25(2):14--25, 2003.
+
+\bibitem{sarkar}
+T.~El-Ghazawi J.~Urbanic K.~Ebcioglu, V.~Sarkar.
+\newblock An experiment in measuring the productivity of three parallel
+  programming languages.
+\newblock {\em Proceedings of the Third Workshop on Productivity and
+  Performance in High-End Computing ser. P-PHEC}, 6:30--37, 2006.
+
+\bibitem{kamp2012my}
+Poul-Henning Kamp.
+\newblock My compiler does not understand me.
+\newblock {\em Communications of the ACM}, 55(7):51--53, 2012.
+
+\bibitem{hoch}
+F.~Shull-S. Asgari V. Basili J. K. Hollingsworth M. V.~Zelkowitz L.~Hochstein,
+  J.~Carver.
+\newblock Parallel programmer productivity: A ca,se study of novice parallel
+  programmers.
+
+\bibitem{kurt2012}
+Kurt Normark.
+\newblock Overview of the four main programming paradigms.
+\newblock {\em ACM SIGSOFT Software Engineering Notes}, 2012.
+
+\bibitem{lr1}
+Kurt Normark.
+\newblock Overview of the four main programming paradigms.
+\newblock 2012.
+
+\bibitem{PBIN}
+I.~Neamtiu P.~Bhattacharya.
+\newblock Assessing programming language impact on development and maintenance:
+  A study on c and c++.
+\newblock {\em Proceedings of the 33rd International Conference on Software
+  Engineering ser. ICSE}, 11:171--180, 2011.
+
+\bibitem{prech}
+L.~Prechelt.
+\newblock An empirical comparison of seven programming languages.
+\newblock {\em IEEE Computer}, 33:23--29, 2000.
+
+\bibitem{lr5}
+Andrew Lumsdaine-Jeremy Siek Jeremiah~Willcock Ronald~Garcia, Jaakko~Jarvi.
+\newblock A comparative study of language support for generic programming.
+\newblock 2003.
+
+\bibitem{nanz}
+K.~Soares da~Silveira S.~Nanz, S.~West.
+
+\bibitem{SenS}
+Moha N. Baudry B. J�z�quel~J.M. Sen, S.
+\newblock Meta-model pruning.
+\newblock {\em In: Proceedings of the 12th International Conference on Model
+  Driven Engineering Languages and Systems (Models)}, pages 32--46, 2009.
+
+\bibitem{Syriani}
+E.~Syriani.
+\newblock A multi-paradigm foundation for model transformation language
+  engineering.
+\newblock 2011.
+
+\bibitem{thung}
+D.~Lo L. Jiang L.~Roeillre T.~E.~Bissyand, F.~Thung.
+\newblock Popularity interoperability and impact of programming languages in
+  100000 open source projects.
+\newblock {\em Proceedings of the 2013 IEEE 37th Annual Computer Software and
+  Applications Conference ser. COMPSAC}, 13:302--312, 2013.
+
+\bibitem{pank}
+G.~Garretn V.~Pankratius, F.~Schmidt.
+\newblock Combining functional and imperative programming for multicore
+  software: An empirical study evaluating scala and java.
+\newblock {\em Proceedings of the 2012 International Conference on Software
+  Engineering ser. ICSE}, 12:123--133, 2012.
+
+\end{thebibliography}
