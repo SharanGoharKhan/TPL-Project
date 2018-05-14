@@ -149,7 +149,7 @@ For example, languages that fall into the imperative paradigm have two main feat
 	The paper is organized as follows. Section I introduces the concept of multi-programming paradigm and its various features while section 2 explains the literature review. All the features are discussed in detail in section 3 followed by detailed discussion & analysis in section 4. We finally conclude in section 5 and mention the future work in section 6.\\
 	
 	\section{Related Work}
-	Most Programming languages provide support for basic generic programming. Generic programming aims to express algorithms and data structures in a way to be broadly adaptable [4]. Declarative programming languages provide more abstract level programming than imperative languages [5]. They are characterized by their formal nature.  Modern programming languages are not just object-oriented but include multiple paradigms. Common programming paradigms are imperative, declarative and symbolic [6]. Use of multiple programming paradigms help programmers in choosing suitable programming styles to get the job done [7]. Existing work demonstrated that separate paradigms for solving problems is insufficient[25]. Hence analyzing multi-paradigm languages should be under study in order to manage work from multiple perspective. 
+	Most Programming languages provide support for basic generic programming. Generic programming aims to express algorithms and data structures in a way to be broadly adaptable \cite{lr5}. Declarative programming languages provide more abstract level programming than imperative languages \cite{lr4}. They are characterized by their formal nature.  Modern programming languages are not just object-oriented but include multiple paradigms. Common programming paradigms are imperative, declarative and symbolic \cite{lr1}. Use of multiple programming paradigms help programmers in choosing suitable programming styles to get the job done \cite{lr2}. Existing work demonstrated that separate paradigms for solving problems is insufficient\cite{WinNT}. Hence analyzing multi-paradigm languages should be under study in order to manage work from multiple perspective. 
 	
 	\section{Features}
 	
@@ -371,7 +371,7 @@ For example, languages that fall into the imperative paradigm have two main feat
 	\textbf{F\#}     & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}.NET debugger\\   System. Diagnostic.\\  Debug. Assert\end{tabular} & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
 	\textbf{Rust}    & \ding{54}                                                                           & \ding{52}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}debug\_assert!\\   interpreter\end{tabular}                         & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Vb .Net} & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}VBasic .Net \\ Debugger\end{tabular}                                & \ding{52}                                                                                                                                \\ \hline
-	\textbf{C\#}     & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NET’s Base \\ Class Library (BCL) \\ supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                     & C\# debugger                                                                                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
+	\textbf{C\#}     & \ding{54}                                                                           & \begin{tabular}[c]{@{}l@{}}conditional compilation\\   C\# - .NETï¿½s Base \\ Class Library (BCL) \\ supports similar facility\\   for C\#, C++ and VBA.\end{tabular}                     & C\# debugger                                                                                   & \begin{tabular}[c]{@{}l@{}}subclass inherits any \\ non-overridden methods \\ in super class that \\ contains asserts\end{tabular} \\ \hline
 	\textbf{D}       & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Oz}      & \ding{54}                                                                           & \ding{54}                                                                                                                                                                                     & \ding{54}                                                                                            & \ding{54}                                                                                                                                \\ \hline
 	\textbf{Matlab}  & \begin{tabular}[c]{@{}l@{}}fatalAssertThat\\   fataAssertWarning\end{tabular} & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   global NDEBUG;\\  NDEBUG=true;\end{tabular}                                                                                                          & \begin{tabular}[c]{@{}l@{}}\ding{52}\\   matlab\end{tabular}                                         & \ding{54}                                                                                                                                \\ \hline
@@ -382,10 +382,6 @@ For example, languages that fall into the imperative paradigm have two main feat
 	\end{table*}
 	\subsection{Conditional compilation}
 	Conditional compilation is a method of producing different results by different parameters provided during compilation of the program. This technique is used when a program is built for different platforms or to run or not to run specific portion of code in a certain condition or to run a program with different version etc. For example, in case of error program should display a debug report so, in C, \#ifdef will be used to define a debug. In HTML, different display sizes can be defined for different platforms like desktop, tablet, mobile etc. A compiler may be set to define different operating systems like windows, linux, mac etc. to compile the code accordingly or for javaascript versioning for different browsers. 
-	\subsection{File handling}
-	File handling is used where data is required to be provided to the program from and to an external source, not using keyboard during program compilation. Data is stored in files that will be used by program during execution. Using file handling technique, data will be read from the file as soon as it requires without waiting for human user to input. Similarly information (output) will be saved to file and program execution will proceed without user to make any interaction like "Press any key to continue...". File handling has three steps 1) Opening a file: Opening a file for reading data from or writing data to an external file. 2) Reading/writing data: Reading data as input for program to store values in variables and operate on it or writing output to the file. 3) Closing a file: Closing the file once it's use is over. A file can be closed as soon as it's use is over or it can be closed at the end of program execution before closing the program.
-	\subsection{Immutable}
-	In muti-paradigm programming languages, an immutable object is an object whose state cannot be modified after it is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created. In some cases, an object is considered immutable even if some internally used attributes change but the object's state appears to be unchanging from an external point of view. For example, an object that uses memorization to cache the results of expensive computations could still be considered an immutable object.
 	
 	\begin{table}[]
 		\centering
@@ -408,6 +404,34 @@ For example, languages that fall into the imperative paradigm have two main feat
 			Python  &                                                                                                                                                              \\ \hline
 		\end{tabular}
 	\end{table}
+	
+	\subsection{File handling}
+	File handling is used where data is required to be provided to the program from and to an external source, not using keyboard during program compilation. Data is stored in files that will be used by program during execution. Using file handling technique, data will be read from the file as soon as it requires without waiting for human user to input. Similarly information (output) will be saved to file and program execution will proceed without user to make any interaction like "Press any key to continue...". File handling has three steps 1) Opening a file: Opening a file for reading data from or writing data to an external file. 2) Reading/writing data: Reading data as input for program to store values in variables and operate on it or writing output to the file. 3) Closing a file: Closing the file once it's use is over. A file can be closed as soon as it's use is over or it can be closed at the end of program execution before closing the program.
+	\begin{table}[]
+\centering
+\caption{Table of File Handling}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+Languages & File Handling                                                                                                                                                                                                                                                                                        \\ \hline
+Scala     & \begin{tabular}[c]{@{}l@{}}import scala.io.Source,\\ Source.fromFile("any  file")\end{tabular}                                                                                                                                                                                                       \\ \hline
+Swift     & Yes                                                                                                                                                                                                                                                                                                  \\ \hline
+Falcon    & Yes                                                                                                                                                                                                                                                                                                  \\ \hline
+F\#       & open System.IO                                                                                                                                                                                                                                                                                       \\ \hline
+Rust      & io::Result\textless{}T\textgreater{}                                                                                                                                                                                                                                                                 \\ \hline
+Vb .net   & \begin{tabular}[c]{@{}l@{}}Imports System.IO, FileStream =\\ New FileStream( "sample.txt", \\ FileMode.OpenOrCreate,\\ FileAccess.ReadWrite)\end{tabular}                                                                                                                                            \\ \hline
+C\#       & \begin{tabular}[c]{@{}l@{}}FileStream \textless{}object\_name\textgreater = new\\ FileStream( \textless{}file\_name\textgreater{}, \\ \textless{}FileMode Enumerator\textgreater{},\\ \textless{}FileAccess Enumerator\textgreater{},\\ \textless{}FileShare Enumerator\textgreater{});\end{tabular} \\ \hline
+D         & \begin{tabular}[c]{@{}l@{}}import std.file;\\ File file = File("test.txt", "w");\\ file.writeln("hello");\\ string s = file.readln();\end{tabular}                                                                                                                                                   \\ \hline
+Oz        & Yes                                                                                                                                                                                                                                                                                                  \\ \hline
+Matlab    & \begin{tabular}[c]{@{}l@{}}A = fscanf(fileID,formatSpec),\\ {[}A,count{]} = fscanf(\_\_\_)\\ A = fscanf(fileID,formatSpec,\\ sizeA)\end{tabular}                                                                                                                                                     \\ \hline
+R         & \begin{tabular}[c]{@{}l@{}}list.files(file.path("F:", "git", \\ "roxygen2")) file.create,\\ file.exists, file.remove, file.rename,\\ file.append, file.copy, file.symlink,\\ file.link(from, to)\end{tabular}                                                                                        \\ \hline
+Python    & file\_object  = open(?filename?, ?mode?)                                                                                                                                                                                                                                                             \\ \hline
+\end{tabular}
+\end{table}
+	\subsection{Immutable}
+	In muti-paradigm programming languages, an immutable object is an object whose state cannot be modified after it is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created. In some cases, an object is considered immutable even if some internally used attributes change but the object's state appears to be unchanging from an external point of view. For example, an object that uses memorization to cache the results of expensive computations could still be considered an immutable object.
+	
+	
 
 	\subsection{Mutable}
 	A mutable object, in contrast to immutable, has data fields that can be altered. One or more of its methods will change the contents of the object, or has a property that, when written into, will change the value of the object.
@@ -437,7 +461,7 @@ For example, languages that fall into the imperative paradigm have two main feat
 	
 	\subsection{imperative control}
 	
-	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like if…else, switch statements and iteration statements like for, while, do etc.
+	Imperative control in programming languages allow to explicitly define the execution order of program statements and expressions. Method or procedure is a sequence of control constructs. A method could be invoked, with or without passing parameters and its result could be returned to the caller. Body of method/procedure may contain imperative control expressions like ifï¿½else, switch statements and iteration statements like for, while, do etc.
 	\newline
 	In the true spirit of knowledge sharing, aiming to be practical, informative, and digestible, so much so that the reader could learn something, we'll enlighten advantages of Python. Under discussion of imperative control, this is most powerful language ever which provides a necessary facilities that a programmer may concern to while programming regarding control flow and functions calls. Next, we should be going to talk about two languages at once: C\# and Visual Basic.NET. These are the two flagship languages for development on the Microsoft platform. We need to talk about them at the same time because although they do look different but these are by far the most popular. Both of them are object oriented. Both of them share the same characteristics. They are strongly typed and use garbage collection so we don't have to worry too much. These languages also include most of the features imperative control with less code and negligible effort is needed by programmer to maintain each and every thing. Table 8 describes comparison of imperative control structures among multi-paradigm programming languages. 
 	
@@ -457,12 +481,12 @@ For example, languages that fall into the imperative paradigm have two main feat
 			Scala           & By name or function pointer & Positional, by val                                                                  & If (x\textgreater{}y) \{max= x;\}    & While, do-while, for          \\ \hline
 			Swift                    & By name or function pointer & Positional, by val                          & If x\textgreater{}y \{max= x;\}      & For-in, while                 \\ \hline
 			Falcon                    & By name or function pointer & Positional, by val                                  & If x\textgreater{}y \{max= x;\}      & For, while                    \\ \hline
-			F\#                      & By name                     & By val, by ref                                  & If (x\textgreater{}y) then num1           & While…do, for…in/to/downto    \\ \hline
+			F\#                      & By name                     & By val, by ref                                  & If (x\textgreater{}y) then num1           & Whileï¿½do, forï¿½in/to/downto    \\ \hline
 			Rust                     & By name or function pointer & Positional, by val                       & If x\textgreater{}y \{max=x;\}   & Loop, while, for-in           \\ \hline
-			Vb .Net                          & By name or function pointer & By value, ref, name                                     & If x\textgreater{}y then x endif              & While…end, do-loop, \\ \hline
+			Vb .Net                          & By name or function pointer & By value, ref, name                                     & If x\textgreater{}y then x endif              & Whileï¿½end, do-loop, \\ \hline
 			C\#              & By name or function pointer & By val, ref, name & If (x\textgreater{}y) \{ max=x; \} & While, do-while, for, foreach \\ \hline
 			D                          & By name or function pointer & Positional, by val                       & If (x\textgreater{}y) \{max=x;\}     & While, do-while, for          \\ \hline
-			Oz           & By name or function pointer & Positional, by val                                                                   & if x\textgreater{}y then x end                & For – do…end                  \\ \hline
+			Oz           & By name or function pointer & Positional, by val                                                                   & if x\textgreater{}y then x end                & For ï¿½ doï¿½end                  \\ \hline
 			Matlab                     & By name or function pointer & Positional, by val                                              & If (x\textgreater{}y) x end                   & While, for                    \\ \hline
 			R                          & By name or function pointer & Positional, by val                          & If (x\textgreater{}y)     & Repeat, While, for            \\ \hline
 			Python                     & By name or function pointer & Positional, by val                                                 & If x\textgreater{}y: max=x               & While, for                    \\ \hline
@@ -510,164 +534,37 @@ For example, languages that fall into the imperative paradigm have two main feat
 	We plan to extend our work by studying, analyzing and comparing more languages as well as as with more features. We plan to come up with a more exhaustive study of the features of the languages in multi-programming languages. We also plan to list and justify the popular versus usable features for the multi-paradigm programming languages for the contemporary times. 
 	
 	%ACKNOWLEDGMENTS are optional
-	\begin{thebibliography}{9}
-	
-		\bibitem @article{kurt2012,
-			title={Overview of the four main programming paradigms},
-			author={Nørmark, Kurt},
-			journal={ACM SIGSOFT Software Engineering Notes},
-			year={2012},
-		}
 
-  \bibitem @article{Frans2012,
-			title={Characteristics of declarative programming languages},
-			author={Frans Coenen},
-			year={2014},
-		}
 
-	
-		\bibitem @article{clarke2006historical,
-			title={A historical perspective on runtime assertion checking in software development},
-			author={Clarke, Lori A and Rosenblum, David S},
-			journal={ACM SIGSOFT Software Engineering Notes},
-			volume={31},
-			number={3},
-			pages={25--37},
-			year={2006},
-			publisher={ACM}
-		}
-		\bibitem @article{hoare2003assertions,
-			title={Assertions: A personal perspective},
-			author={Hoare, Charles Antony Richard},
-			journal={IEEE Annals of the History of Computing},
-			volume={25},
-			number={2},
-			pages={14--25},
-			year={2003},
-			publisher={IEEE}
-		}
-		\bibitem @article{kamp2012my,
-			title={My compiler does not understand me},
-			author={Kamp, Poul-Henning},
-			journal={Communications of the ACM},
-			volume={55},
-			number={7},
-			pages={51--53},
-			year={2012},
-			publisher={ACM}
-		}
-		\bibitem @article{lr1,
-			title={Overview of the four main programming paradigms},
-			author={Nørmark, Kurt},
-			year={2012},
-			publisher={Aalborg University}
-		}
-		\bibitem @article{lr2,
-			title={Multi-Paradigm Programming Language},
-			year={2013},
-			publisher={developer.mozilla.org}
-		}
-		\bibitem @article{lr3,
-			title={Comparative Programming Languages},
-			author={Robert G. Clark},
-			year={2000},
-		}
-		\bibitem @article{lr4,
-			title={Multi-paradigm Declarative Languages},
-			author={Michael Hanus},
-			year={2007},
-			publisher={Springer}
-		}
-		\bibitem @article{lr5,
-			title={A Comparative Study of Language Support for Generic Programming},
-			author={Ronald Garcia, Jaakko Jarvi, Andrew Lumsdaine, Jeremy Siek, Jeremiah Willcock},
-			year={2003},
-			publisher={ResearchGate}
-		}
-		\bibitem @inproceedings{Bruce:1993:STC:158511.158650,
-			author = {Bruce, Kim B.},
-			title = {Safe Type Checking in a Statically-typed Object-oriented Programming Language},
-			booktitle = {Proceedings of the 20th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
-			series = {POPL '93},
-			year = {1993},
-			isbn = {0-89791-560-7},
-			location = {Charleston, South Carolina, USA},
-			pages = {285--298},
-			numpages = {14},
-			url = {http://doi.acm.org/10.1145/158511.158650},
-			doi = {10.1145/158511.158650},
-			acmid = {158650},
-			publisher = {ACM},
-			address = {New York, NY, USA},
-			
-			\bibitem @article{Bodik:2000:AEA:358438.349342, Bod\'{\i}k, Rastislav and Gupta, Rajiv and Sarkar, Vivek,
-				title = {ABCD: Eliminating Array Bounds Checks on Demand},
-				v. 35, 321-333, May,2000,
-				pages = {},
-				numpages = {13},
-				url = {http://doi.acm.org/10.1145/358438.349342},
-				doi = {10.1145/358438.349342},
-				acmid = {349342},
-				publisher = {ACM},
-				address = {New York, NY, USA},
-				
-				\bibitem @Antoy, Sergio and Hanus, Michael.:
-				Declarative Programming with Function Patterns. in
-				Logic Based Program Synthesis and Transformation,
-				6-22 (2006)
-			}
-			
-			
-			\bibitem @Antoy, S.: Evaluation Strategies for Functional Logic Programming. Journal of Symbolic Computation 40(1), 875–903 (2005)
-		}
-		
-		
-		
-		\bibitem @Sen, S., Moha, N., Baudry, B., Jézéquel, J.M.: Meta-model pruning. In: Proceedings of the 12th International Conference on Model Driven Engineering Languages and Systems (Models), pp. 32–46. Springer, Berlin (2009)
-		
-		
-		\bibitem @Syriani, E.: A multi-paradigm foundation for model transformation language engineering. Ph.D. thesis, McGill University (2011)
-		
-		
-		
-		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
-		
-		
-		\bibitem @ T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013)
-		
-		
-		\bibitem @Günther, S., Cleenewerck, T.: Design principles for internal domain-specific languages: a pattern catalog illustrated by Ruby. In: Proceedings of the 17th International Conference on Pattern Languages of Programs (PLoP'10) (2010)
-		
-		
-		
-		\bibitem @George, L., Wider, A., Scheidgen, M.: Type-safe model transformation languages as internal DSLs in scala. In: Proceedings of the 5th International Conference on Theory and Practice of Model Transformations (ICMT'12), pp. 160–175. (2012)
-		
-		
-		\bibitem @P. Bhattacharya, I. Neamtiu, "Assessing programming language impact on development and maintenance: A study on C and C++", Proceedings of the 33rd International Conference on Software Engineering ser. ICSE ' '11, pp. 171-180, (2011).
-		
-		
-		\bibitem @T. E. Bissyandé, F. Thung, D. Lo, L. Jiang, L. Réveillère, "Popularity interoperability and impact of programming languages in 100000 open source projects", Proceedings of the 2013 IEEE 37th Annual Computer Software and Applications Conference ser. COMPSAC ' '13, pp. 303-312, (2013).
-		
-		
-		\bibitem @K. Ebcioglu, V. Sarkar, T. El-Ghazawi, J. Urbanic, "An experiment in measuring the productivity of three parallel programming languages", Proceedings of the Third Workshop on Productivity and Performance in High-End Computing ser. P-PHEC ' '06, pp. 30-37, 2006.
-		
-		\bibitem @C. Ghezzi, M. Jazayeri, Programming language concepts, Wiley & Sons, (1997).
-		
-		\bibitem @ 
-		L. Hochstein, J. Carver, F. Shull, S. Asgari, V. Basili, J. K. Hollingsworth, M. V. Zelkowitz, "Parallel programmer productivity: A case study of novice parallel programmers", Proceedings of the 2005 ACM/IEEE Conference on Supercomputing ser. SC ' '05, pp. 35-43, (2005).
-		
-		
-		\bibitem @S. Nanz, S. West, K. Soares da Silveira, "Examining the expert gap in parallel programming", Proceedings of the 19th European Conference on Parallel Processing (Euro-Par ' '13) ser. Lecture Notes in Computer Science, vol. 8097, pp. 434-445, (2013).
-		
-		
-		\bibitem @V. Pankratius, F. Schmidt, G. Garretón, "Combining functional and imperative programming for multicore software: An empirical study evaluating Scala and Java", Proceedings of the 2012 International Conference on Software Engineering ser. ICSE ' '12, pp. 123-133, (2012).
-		
-		
-		\bibitem @L. Prechelt, "An empirical comparison of seven programming languages", IEEE Computer, vol. 33, no. 10, pp. 23-29, Oct. (2000).
-		\bibitem @misc{WinNT,
-  title = {{MS Windows NT} Kernel Description},
-  howpublished = {\url{http://web.archive.org/web/20080207010024/http://www.808multimedia.com/winnt/kernel.htm}},
-  note = {Accessed: 2010-09-30}
-}
-\end{thebibliography}
+%----------------------------------------------------------------------
+
+% B I B L I O G R A P H Y
+% -----------------------
+
+% The following statement selects the style to use for references.  It controls the sort order of the entries in the bibliography and also the formatting for the in-text labels.
+\bibliographystyle{plain}
+% This specifies the location of the file containing the bibliographic information.
+% It assumes you're using BibTeX (if not, why not?).
+\cleardoublepage % This is needed if the book class is used, to place the anchor in the correct page,
+                 % because the bibliography will start on its own page.
+                 % Use \clearpage instead if the document class uses the "oneside" argument
+\phantomsection  % With hyperref package, enables hyperlinking from the table of contents to bibliography
+% The following statement causes the title "References" to be used for the bibliography section:
+\renewcommand*{\bibname}{References}
+
+% Add the References to the Table of Contents
+\addcontentsline{toc}{chapter}{\textbf{References}}
+
+\bibliography{sigproc}
+% Tip 5: You can create multiple .bib files to organize your references.
+% Just list them all in the \bibliogaphy command, separated by commas (no spaces).
+
+% The following statement causes the specified references to be added to the bibliography% even if they were not
+% cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
+\nocite{*}
+
+
+
+
+
 \end{document}
